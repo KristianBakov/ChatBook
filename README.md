@@ -14,7 +14,7 @@ ChatBook is a social networking web application inspired by Facebook, featuring 
 ## Technologies Used
 
 - **Backend**: ASP.NET Core, SignalR
-- **Frontend**: React, Redux
+- **Frontend**: React, Redux, Bootstrap
 - **Database**: SQL Server
 - **Authentication**: ASP.NET Identity
 - **Real-time communication**: SignalR
