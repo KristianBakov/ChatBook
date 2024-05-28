@@ -25,6 +25,11 @@ body {
   color: var(--text-color);
 }
 
+.post-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .navbar {
   background-color: var(--navbar-bg-color);
 }
