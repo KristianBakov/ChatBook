@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "reactstrap";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme } from "../../contexts/ThemeContext";
 
-const ThemeToggle = () => {
+const ThemeToggleDev = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -12,4 +12,4 @@ const ThemeToggle = () => {
   );
 };
 
-export default ThemeToggle;
+export default ThemeToggleDev;

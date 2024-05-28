@@ -1,0 +1,64 @@
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-bg-color);
+  transition: background-color 0.4s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.icon {
+  font-size: 18px;
+  transition: opacity 0.4s;
+}
+
+.sun {
+  opacity: 1;
+}
+
+.moon {
+  opacity: 0;
+}
+
+input:checked + .slider .sun {
+  opacity: 0;
+}
+
+input:checked + .slider .moon {
+  opacity: 1;
+}
+
+.slider-thumb {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  background-color: var(--toggle-thumb-color);
+  border-radius: 50%;
+  transition: transform 0.4s;
+  left: 4px;
+  bottom: 4px;
+}
+
+input:checked + .slider .slider-thumb {
+  transform: translateX(26px);
+}
