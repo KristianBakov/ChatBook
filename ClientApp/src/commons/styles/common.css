@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #000000;
+  --navbar-bg-color: #e3f2fd;
+  --sidebar-bg-color: #e9ecef;
+  --friendslist-bg-color: #e9ecef;
+  --btn-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #343a40;
+  --text-color: #ffffff;
+  --navbar-bg-color: #23272b;
+  --sidebar-bg-color: #3a3f44;
+  --friendslist-bg-color: #3a3f44;
+  --btn-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color);
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  color: var(--text-color);
+}
+
+.friends-list {
+  background-color: var(--friendslist-bg-color);
+  color: var(--text-color);
+}
+
+.btn-toggle {
+  color: var(--btn-color);
+  border-color: var(--btn-color);
+}
