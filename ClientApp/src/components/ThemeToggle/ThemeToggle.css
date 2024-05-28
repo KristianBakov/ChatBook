@@ -1,64 +1,81 @@
-.toggle {
+/* .container {
   position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.toggle input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--toggle-bg-color);
-  transition: background-color 0.4s;
-  border-radius: 34px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 8px;
+  justify-content: center;
+  width: 80px;
+  height: 35px;
+  padding: 4px 8px;
+  border-radius: 35px;
+  cursor: pointer;
 }
 
-.icon {
-  font-size: 18px;
-  transition: opacity 0.4s;
+.IsLight {
+  background-color: var(--color-toggle-dark);
 }
 
-.sun {
-  opacity: 1;
+.IsDark {
+  background-color: #fff;
 }
 
-.moon {
-  opacity: 0;
+.container input {
+  display: none;
 }
 
-input:checked + .slider .sun {
-  opacity: 0;
-}
-
-input:checked + .slider .moon {
-  opacity: 1;
-}
-
-.slider-thumb {
-  position: absolute;
-  height: 26px;
-  width: 26px;
-  background-color: var(--toggle-thumb-color);
+.container input + div {
   border-radius: 50%;
-  transition: transform 0.4s;
-  left: 4px;
-  bottom: 4px;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  box-shadow: inset 8px -8px 0 0 var(--color-toggle-dark, #000);
+  transform: scale(1) rotate(-2deg);
+  transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
 }
 
-input:checked + .slider .slider-thumb {
-  transform: translateX(26px);
+.container input + div::before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background 0.3s ease;
 }
+
+.container input + div::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: -2px 0 0 -2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 -16px 0 var(--color-toggle-light, #eee),
+    0 16px 0 var(--color-toggle-light, #eee),
+    16px 0 0 var(--color-toggle-light, #eee),
+    -16px 0 0 var(--color-toggle-light, #eee),
+    12px 12px 0 var(--color-toggle-light, #eee),
+    -12px 12px 0 var(--color-toggle-light, #eee),
+    12px -12px 0 var(--color-toggle-light, #eee),
+    -12px -12px 0 var(--color-toggle-light, #eee);
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.container input:checked + div {
+  box-shadow: inset 32px -32px 0 0 #fff;
+  transform: scale(0.5) rotate(0deg);
+  transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
+}
+
+.container input:checked + div::before {
+  background: var(--color-toggle-light, #eee);
+  transition: background 0.3s ease 0.1s;
+}
+
+.container input:checked + div::after {
+  transform: scale(1.5);
+  transition: transform 0.5s ease 0.15s;
+} */

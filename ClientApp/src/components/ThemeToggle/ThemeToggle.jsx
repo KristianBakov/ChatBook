@@ -4,21 +4,18 @@ import "./ThemeToggle.css";
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const isDark = theme === "dark";
 
-  return (
-    <label className="toggle">
-      <input
-        type="checkbox"
-        checked={theme === "dark"}
-        onChange={toggleTheme}
-      />
-      <span className="slider">
-        <span className="icon sun">🔆</span>
-        <span className="icon moon">🌙</span>
-        <span className="slider-thumb"></span>
-      </span>
-    </label>
-  );
+  //   return (
+  //     <label
+  //       className={`container ${isDark ? "IsDark" : "IsLight"}`}
+  //       title={isDark ? "Activate light mode" : "Activate dark mode"}
+  //       aria-label={isDark ? "Activate light mode" : "Activate dark mode"}
+  //     >
+  //       <input type="checkbox" checked={isDark} onChange={toggleTheme} />
+  //       <div />
+  //     </label>
+  //   );
 };
 
 export default ThemeToggle;

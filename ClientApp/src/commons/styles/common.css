@@ -9,10 +9,8 @@
   --sidebar-bg-color: #e9ecef;
   --friendslist-bg-color: #e9ecef;
   --btn-color: #000000;
-  --toggle-bg-color: #f0f0f0;
-  --toggle-btn-color: #ffffff;
-  --toggle-track-color: #000000;
-  --toggle-thumb-color: #ffffff;
+  --color-toggle-light: #f6d447;
+  --color-toggle-dark: #2d0697;
 }
 
 [data-theme="dark"] {
@@ -22,10 +20,6 @@
   --sidebar-bg-color: #3a3f44;
   --friendslist-bg-color: #3a3f44;
   --btn-color: #ffffff;
-  --toggle-bg-color: #606060;
-  --toggle-btn-color: #000000;
-  --toggle-track-color: #ffffff;
-  --toggle-thumb-color: #000000;
 }
 
 body {
