@@ -1,5 +1,6 @@
 import React from "react";
 import IconButton from "../../IconButton/IconButton";
+import { FaBeer } from "react-icons/fa";
 
 const FriendsList = () => {
   const friends = ["Alice", "Bob", "Charlie", "Dave"];
@@ -8,7 +9,9 @@ const FriendsList = () => {
     <div className="col friends-list">
       <h5>Friends</h5>
       {friends.map((friend) => (
-        <IconButton key={friend}>{friend}</IconButton>
+        <IconButton key={friend} icon={FaBeer}>
+          {friend}
+        </IconButton>
       ))}
     </div>
   );
