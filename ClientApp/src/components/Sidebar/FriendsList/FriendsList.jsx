@@ -1,4 +1,5 @@
 import React from "react";
+import IconButton from "../../IconButton/IconButton";
 
 const FriendsList = () => {
   const friends = ["Alice", "Bob", "Charlie", "Dave"];
@@ -6,13 +7,9 @@ const FriendsList = () => {
   return (
     <div className="col friends-list">
       <h5>Friends</h5>
-      <ul className="list-group list-group-flush">
-        {friends.map((friend) => (
-          <li key={friend} className="list-group-item">
-            {friend}
-          </li>
-        ))}
-      </ul>
+      {friends.map((friend) => (
+        <IconButton key={friend}>{friend}</IconButton>
+      ))}
     </div>
   );
 };
