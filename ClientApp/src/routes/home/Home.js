@@ -1,12 +1,12 @@
 import React from "react";
 import NewsFeed from "../../components/NewsFeed";
-import FriendsAndSocial from "../../components/FriendsAndSocial/FriendsAndSocial";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 const Home = () => {
   return (
-      <div className="row">
-          <FriendsAndSocial />
-          <NewsFeed />
+    <div className="row">
+      <Sidebar />
+      <NewsFeed />
     </div>
   );
 };

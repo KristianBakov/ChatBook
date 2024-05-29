@@ -13,26 +13,21 @@ html {
   }
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-*/
-
 /* NavMenu.css */
 .navbar {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--brand-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--brand-color);
 }
 
 .navbar-brand:hover {
-    color: var(--brand-color-darker);
+  color: var(--brand-color-darker);
 }
 
 .nav-link {
-    font-size: 1rem;
+  font-size: 1rem;
 }

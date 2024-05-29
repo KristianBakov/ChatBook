@@ -4,7 +4,7 @@ const FriendsList = () => {
   const friends = ["Alice", "Bob", "Charlie", "Dave"];
 
   return (
-    <div className="col-md-2 friends-list">
+    <div className="col friends-list">
       <h5>Friends</h5>
       <ul className="list-group list-group-flush">
         {friends.map((friend) => (

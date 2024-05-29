@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./Header";
+import NavMenu from "./NavMenu/NavMenu";
 import { Container } from "reactstrap";
 import ThemeToggleDev from "./ThemeToggle/ThemeToggleDev";
 
 export const Layout = ({ children }) => {
   return (
     <Container>
-      <Header />
+      <NavMenu />
       <ThemeToggleDev />
       <div className="container-fluid">{children}</div>
     </Container>

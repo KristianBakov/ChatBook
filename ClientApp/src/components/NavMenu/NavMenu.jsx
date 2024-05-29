@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
 
-const Header = () => {
+const NavMenu = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -43,4 +43,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavMenu;

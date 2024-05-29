@@ -3,27 +3,25 @@
 }
 
 :root {
-    --bg-color: #f8f9fa;
-    --text-color: #000000;
-    --navbar-bg-color: #e3f2fd;
-    --sidebar-bg-color: #e9ecef;
-    --friendslist-bg-color: #e9ecef;
-    --btn-color: #000000;
-    --color-toggle-light: #f6d447;
-    --color-toggle-dark: #2d0697;
-    --brand-color: #007bff;
-    --brand-color-darker: #0056b3;
+  --bg-color: #f8f9fa;
+  --text-color: #000000;
+  --navbar-bg-color: #e3f2fd;
+  --sidebar-bg-color: #e9ecef;
+  --btn-color: #000000;
+  --color-toggle-light: #f6d447;
+  --color-toggle-dark: #2d0697;
+  --brand-color: #007bff;
+  --brand-color-darker: #0056b3;
 }
 
 [data-theme="dark"] {
-    --bg-color: #343a40;
-    --text-color: #ffffff;
-    --navbar-bg-color: #23272b;
-    --sidebar-bg-color: #3a3f44;
-    --friendslist-bg-color: #3a3f44;
-    --btn-color: #ffffff;
-    --brand-color: #6eb4ff;
-    --brand-color-darker: #4d8dff;
+  --bg-color: #343a40;
+  --text-color: #ffffff;
+  --navbar-bg-color: #23272b;
+  --sidebar-bg-color: #3a3f44;
+  --btn-color: #ffffff;
+  --brand-color: #6eb4ff;
+  --brand-color-darker: #4d8dff;
 }
 
 body {
@@ -36,9 +34,8 @@ body {
   color: var(--text-color);
 }
 
-
 .nav-link {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .navbar {
@@ -51,7 +48,6 @@ body {
 }
 
 .friends-list {
-  background-color: var(--friendslist-bg-color);
   color: var(--text-color);
 }
 
