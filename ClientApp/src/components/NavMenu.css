@@ -26,6 +26,11 @@ html {
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--brand-color);
+}
+
+.navbar-brand:hover {
+    color: var(--brand-color-darker);
 }
 
 .nav-link {
