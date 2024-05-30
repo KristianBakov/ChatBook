@@ -1,6 +1,5 @@
 import React from "react";
-import { Nav, NavItem, NavLink } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Nav, NavItem } from "reactstrap";
 import IconButton from "../IconButton/IconButton";
 
 const SidebarLinks = () => {
@@ -8,34 +7,26 @@ const SidebarLinks = () => {
     <div className=" bg-transparent sidebar">
       <Nav vertical>
         <NavItem>
-          <IconButton tag={Link} isNavLink to="/">
+          <IconButton isNavLink to="/">
             Home
           </IconButton>
         </NavItem>
         <NavItem>
-          <IconButton tag={Link} isNavLink to="/profile">
+          <IconButton isNavLink to="/profile">
             Profile
           </IconButton>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to="/messages">
-            Messages
-          </NavLink>
+          <IconButton to="/messages">Messages</IconButton>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to="/notifications">
-            Notifications
-          </NavLink>
+          <IconButton to="/notifications">Notifications</IconButton>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to="/settings">
-            Settings
-          </NavLink>
+          <IconButton to="/settings">Settings</IconButton>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to="/logout">
-            Logout
-          </NavLink>
+          <IconButton to="/logout">Logout</IconButton>
         </NavItem>
       </Nav>
     </div>

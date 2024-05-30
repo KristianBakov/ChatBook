@@ -12,14 +12,11 @@
 .btn-nav:hover {
   color: var(--btn-color);
   background-color: var(--btn-bg-dark);
-  /* add big shadow  */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .btn-nav:active {
   color: var(--btn-color);
   background-color: var(--btn-bg-darker);
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .btn-nav .mr-2 {
