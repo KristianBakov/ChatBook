@@ -5,11 +5,11 @@ import {
   NavbarBrand,
   NavbarToggler,
   NavItem,
-  NavLink,
-  Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
+import IconCircleButton from "../IconCircleButton/IconCircleButton";
+import { MdHome } from "react-icons/md";
 
 const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
   return (
@@ -23,9 +23,9 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
         </NavbarBrand>
         <NavbarToggler onClick={toggleSidebar} className="mr-2" />
         <NavItem>
-          <NavLink tag={Link} to="/">
+          <IconCircleButton icon={MdHome} tag={Link} to="/">
             Home
-          </NavLink>
+          </IconCircleButton>
         </NavItem>
         <Collapse
           className="d-sm-inline-flex flex-sm-row-reverse d-md-none"

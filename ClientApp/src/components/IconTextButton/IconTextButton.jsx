@@ -3,7 +3,7 @@ import { Button } from "reactstrap";
 import { Link as RouterLink } from "react-router-dom";
 import "./IconTextButton.css";
 
-const IconTextButton = ({ icon: Icon, children, to, isNavLink }) => {
+const IconTextButton = ({ icon: Icon, children, isNavLink, to }) => {
   const buttonClasses = "btn btn-nav d-flex w-100 text-left align-items-center";
 
   if (isNavLink && to) {

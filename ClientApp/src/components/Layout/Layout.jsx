@@ -19,7 +19,7 @@ export const Layout = ({ children }) => {
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
 
   return (
-    <Container fluid>
+    <Container fluid className="p-0">
       <NavMenu toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
       <ThemeToggleDev />
       <Row>
