@@ -10,7 +10,6 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
-import Sidebar from "../Sidebar/Sidebar";
 
 const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
   return (
@@ -23,18 +22,17 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           ChatBook
         </NavbarBrand>
         <NavbarToggler onClick={toggleSidebar} className="mr-2" />
-
         <NavItem>
           <NavLink tag={Link} to="/">
             Home
           </NavLink>
         </NavItem>
         <Collapse
-          className="d-sm-inline-flex flex-sm-row-reverse"
+          className="d-sm-inline-flex flex-sm-row-reverse d-md-none"
           isOpen={isSidebarOpen}
           navbar
         >
-          <Sidebar />
+          {/* extra menu items for the collapse here */}
         </Collapse>
       </Navbar>
     </header>
