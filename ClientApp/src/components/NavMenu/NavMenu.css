@@ -1,8 +1,9 @@
 ﻿/* NavMenu.css */
 .navbar {
-  background-color: #f8f9fa;
+  background-color: var(--navbar-bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   list-style: none;
+  border-bottom-color: var(--navbar-line-color) !important;
 }
 
 .navbar-brand {

@@ -9,6 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
 import IconCircleButton from "../IconCircleButton/IconCircleButton";
+import ThemeToggleDev from "../ThemeToggle/ThemeToggleDev";
 import { MdHome } from "react-icons/md";
 
 const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
@@ -22,6 +23,9 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           ChatBook
         </NavbarBrand>
         <NavbarToggler onClick={toggleSidebar} className="mr-2" />
+        <NavItem>
+          <ThemeToggleDev />
+        </NavItem>
         <NavItem>
           <IconCircleButton icon={MdHome} tag={Link} to="/">
             Home

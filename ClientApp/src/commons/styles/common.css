@@ -10,6 +10,7 @@
   --text-color: #000000;
   --navbar-bg-color: #ffffff;
   --sidebar-bg-color: #e9ecef;
+  --navbar-line-color: #e9ecef;
   --btn-color: #000000;
   --color-toggle-light: #f6d447;
   --color-toggle-dark: #2d0697;
@@ -25,6 +26,7 @@
   --text-color: #ffffff;
   --navbar-bg-color: #23272b;
   --sidebar-bg-color: #3a3f44;
+  --navbar-line-color: #3a3f44;
   --btn-color: #ffffff;
   --brand-color: #6eb4ff;
   --brand-color-darker: #2c3647;
@@ -55,4 +57,9 @@ body {
 
 .friends-list {
   color: var(--text-color);
+}
+
+.container-clean {
+  padding: 0 !important;
+  overflow-x: hidden;
 }

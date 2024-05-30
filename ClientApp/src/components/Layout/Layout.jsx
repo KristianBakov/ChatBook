@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NavMenu from "../NavMenu/NavMenu";
 import { Container, Row, Col } from "reactstrap";
-import ThemeToggleDev from "../ThemeToggle/ThemeToggleDev";
 import Sidebar from "../Sidebar/Sidebar";
 import useWindowSize from "../../hooks/UseScreenSize";
 import "./Layout.css";
@@ -19,9 +18,8 @@ export const Layout = ({ children }) => {
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
 
   return (
-    <Container fluid className="p-0">
+    <Container fluid className="container-clean">
       <NavMenu toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-      <ThemeToggleDev />
       <Row>
         <Col
           xs="12"
