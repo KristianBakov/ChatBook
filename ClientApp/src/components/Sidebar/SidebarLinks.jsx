@@ -1,32 +1,32 @@
 import React from "react";
 import { Nav, NavItem } from "reactstrap";
-import IconButton from "../IconButton/IconButton";
+import IconTextButton from "../IconTextButton/IconTextButton";
 
 const SidebarLinks = () => {
   return (
     <div className=" bg-transparent sidebar">
       <Nav vertical>
         <NavItem>
-          <IconButton isNavLink to="/">
+          <IconTextButton isNavLink to="/">
             Home
-          </IconButton>
+          </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconButton isNavLink to="/profile">
+          <IconTextButton isNavLink to="/profile">
             Profile
-          </IconButton>
+          </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconButton to="/messages">Messages</IconButton>
+          <IconTextButton to="/messages">Messages</IconTextButton>
         </NavItem>
         <NavItem>
-          <IconButton to="/notifications">Notifications</IconButton>
+          <IconTextButton to="/notifications">Notifications</IconTextButton>
         </NavItem>
         <NavItem>
-          <IconButton to="/settings">Settings</IconButton>
+          <IconTextButton to="/settings">Settings</IconTextButton>
         </NavItem>
         <NavItem>
-          <IconButton to="/logout">Logout</IconButton>
+          <IconTextButton to="/logout">Logout</IconTextButton>
         </NavItem>
       </Nav>
     </div>

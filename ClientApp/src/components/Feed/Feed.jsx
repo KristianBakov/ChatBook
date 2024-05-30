@@ -1,6 +1,6 @@
 import React from "react";
 
-const NewsFeed = () => {
+const Feed = () => {
   const posts = [
     { id: 1, user: "John Doe", content: "Hello, this is my first post!" },
     { id: 2, user: "Jane Smith", content: "React is awesome!" },
@@ -20,4 +20,4 @@ const NewsFeed = () => {
   );
 };
 
-export default NewsFeed;
+export default Feed;

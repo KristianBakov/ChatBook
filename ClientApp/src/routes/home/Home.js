@@ -1,10 +1,10 @@
 import React from "react";
-import NewsFeed from "../../components/NewsFeed";
+import Feed from "../../components/Feed/Feed";
 
 const Home = () => {
   return (
     <div className="row">
-      <NewsFeed />
+      <Feed />
     </div>
   );
 };

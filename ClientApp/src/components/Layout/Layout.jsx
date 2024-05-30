@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import NavMenu from "./NavMenu/NavMenu";
+import NavMenu from "../NavMenu/NavMenu";
 import { Container, Row, Col } from "reactstrap";
-import ThemeToggleDev from "./ThemeToggle/ThemeToggleDev";
-import Sidebar from "./Sidebar/Sidebar";
-import useWindowSize from "../hooks/UseScreenSize"; // Import the custom hook
+import ThemeToggleDev from "../ThemeToggle/ThemeToggleDev";
+import Sidebar from "../Sidebar/Sidebar";
+import useWindowSize from "../../hooks/UseScreenSize";
+import "./Layout.css";
 
 export const Layout = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);

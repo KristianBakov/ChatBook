@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col } from "reactstrap";
-import IconButton from "../../IconButton/IconButton";
+import IconTextButton from "../../IconTextButton/IconTextButton";
 import "./FriendsList.css";
 
 const FriendsList = () => {
@@ -26,7 +26,7 @@ const FriendsList = () => {
         <h5>Contacts</h5>
         <div className="friends-list-scroll">
           {friends.map((friend) => (
-            <IconButton key={friend}>{friend}</IconButton>
+            <IconTextButton key={friend}>{friend}</IconTextButton>
           ))}
         </div>
       </Col>
