@@ -4,6 +4,9 @@
 
 :root {
   --bg-color: #f8f9fa;
+  --bg-color-darker: #e9ecef;
+  --btn-bg-dark: #e4e6e9;
+  --btn-bg-darker: #d1d3d8;
   --text-color: #000000;
   --navbar-bg-color: #e3f2fd;
   --sidebar-bg-color: #e9ecef;
@@ -15,13 +18,16 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: #343a40;
+  --bg-color: #18191a;
+  --bg-color-darker: #23272b;
+  --btn-bg-dark: #303031;
+  --btn-bg-darker: #1e1e1e;
   --text-color: #ffffff;
   --navbar-bg-color: #23272b;
   --sidebar-bg-color: #3a3f44;
   --btn-color: #ffffff;
   --brand-color: #6eb4ff;
-  --brand-color-darker: #4d8dff;
+  --brand-color-darker: #2c3647;
 }
 
 body {
@@ -49,9 +55,4 @@ body {
 
 .friends-list {
   color: var(--text-color);
-}
-
-.btn-toggle {
-  color: var(--btn-color);
-  border-color: var(--btn-color);
 }

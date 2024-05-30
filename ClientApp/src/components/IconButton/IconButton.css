@@ -1,0 +1,31 @@
+/* IconButton.css */
+.btn-nav {
+  color: var(--btn-color);
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-nav:hover {
+  color: var(--btn-color);
+  background-color: var(--btn-bg-dark);
+  /* add big shadow  */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.btn-nav:active {
+  color: var(--btn-color);
+  background-color: var(--btn-bg-darker);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.btn-nav .mr-2 {
+  margin-right: 8px;
+}
+
+.btn-nav .nav-icon {
+  font-size: 1.3rem;
+}

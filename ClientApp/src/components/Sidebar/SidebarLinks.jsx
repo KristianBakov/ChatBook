@@ -1,20 +1,21 @@
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
+import IconButton from "../IconButton/IconButton";
 
 const SidebarLinks = () => {
   return (
     <div className=" bg-transparent sidebar">
       <Nav vertical>
         <NavItem>
-          <NavLink tag={Link} to="/">
+          <IconButton tag={Link} isNavLink to="/">
             Home
-          </NavLink>
+          </IconButton>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to="/profile">
+          <IconButton tag={Link} isNavLink to="/profile">
             Profile
-          </NavLink>
+          </IconButton>
         </NavItem>
         <NavItem>
           <NavLink tag={Link} to="/messages">
