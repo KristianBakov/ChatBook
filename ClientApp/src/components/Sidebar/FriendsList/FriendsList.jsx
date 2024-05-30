@@ -1,19 +1,36 @@
 import React from "react";
+import { Container, Col } from "reactstrap";
 import IconButton from "../../IconButton/IconButton";
-import { FaBeer } from "react-icons/fa";
+import "./FriendsList.css";
 
 const FriendsList = () => {
-  const friends = ["Alice", "Bob", "Charlie", "Dave"];
+  const friends = [
+    "Alice",
+    "Bob",
+    "Charlie",
+    "Dave",
+    "Eve",
+    "Frank",
+    "Grace",
+    "Heidi",
+    "Ivan",
+    "Judy",
+    "Mallory",
+    "Oscar",
+    "Peggy",
+  ];
 
   return (
-    <div className="col friends-list">
-      <h5>Friends</h5>
-      {friends.map((friend) => (
-        <IconButton key={friend} icon={FaBeer}>
-          {friend}
-        </IconButton>
-      ))}
-    </div>
+    <Container>
+      <Col className="friends-list-container">
+        <h5>Contacts</h5>
+        <div className="friends-list-scroll">
+          {friends.map((friend) => (
+            <IconButton key={friend}>{friend}</IconButton>
+          ))}
+        </div>
+      </Col>
+    </Container>
   );
 };
 
