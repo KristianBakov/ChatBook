@@ -56,3 +56,18 @@ body {
 .friends-list {
   color: var(--text-color);
 }
+
+/* Layout.css */
+.sidebar-container {
+  display: none;
+}
+
+.sidebar-container.open {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .sidebar-container {
+    display: block;
+  }
+}

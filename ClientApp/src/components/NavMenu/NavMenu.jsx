@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Collapse,
   Navbar,
@@ -6,15 +6,13 @@ import {
   NavbarToggler,
   NavItem,
   NavLink,
+  Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
+import Sidebar from "../Sidebar/Sidebar";
 
-const NavMenu = () => {
-  const [collapsed, setCollapsed] = useState(true);
-
-  const toggleNavbar = () => setCollapsed(!collapsed);
-
+const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
   return (
     <header>
       <Navbar
@@ -24,19 +22,19 @@ const NavMenu = () => {
         <NavbarBrand tag={Link} to="/">
           ChatBook
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <NavbarToggler onClick={toggleSidebar} className="mr-2" />
+
+        <NavItem>
+          <NavLink tag={Link} to="/">
+            Home
+          </NavLink>
+        </NavItem>
         <Collapse
           className="d-sm-inline-flex flex-sm-row-reverse"
-          isOpen={!collapsed}
+          isOpen={isSidebarOpen}
           navbar
         >
-          <ul className="navbar-nav flex-grow">
-            <NavItem>
-              <NavLink tag={Link} to="/">
-                Home
-              </NavLink>
-            </NavItem>
-          </ul>
+          <Sidebar />
         </Collapse>
       </Navbar>
     </header>
