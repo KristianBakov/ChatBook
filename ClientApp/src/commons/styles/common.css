@@ -42,24 +42,24 @@ body {
   color: var(--text-color);
 }
 
-.nav-link {
-  color: var(--text-color);
-}
-
-.navbar {
-  background-color: var(--navbar-bg-color);
-}
-
-.sidebar {
-  background-color: var(--sidebar-bg-color);
-  color: var(--text-color);
-}
-
-.friends-list {
-  color: var(--text-color);
-}
-
 .container-clean {
   padding: 0 !important;
   overflow-x: hidden;
+}
+
+.btn {
+  border: none;
+  background-color: var(--btn-bg-dark);
+  color: var(--btn-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  color: var(--btn-color);
+  background-color: var(--btn-bg-dark);
+}
+
+.btn:active {
+  color: var(--btn-color) !important;
+  background-color: var(--btn-bg-darker) !important;
 }

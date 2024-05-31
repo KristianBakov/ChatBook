@@ -6,7 +6,7 @@ const ThemeToggleDev = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Button onClick={toggleTheme} color={theme === "light" ? "dark" : "light"}>
+    <Button onClick={toggleTheme} color={theme === "light" ? "light" : "dark"}>
       Switch to {theme === "light" ? "Dark" : "Light"} Theme
     </Button>
   );

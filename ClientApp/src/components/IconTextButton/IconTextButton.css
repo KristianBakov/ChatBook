@@ -1,24 +1,10 @@
 /* IconButton.css */
 .btn-nav {
-  color: var(--btn-color);
-  background-color: transparent;
-  border: none;
+  background-color: transparent !important;
   padding: 8px 16px;
   border-radius: 4px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
 }
-
-.btn-nav:hover {
-  color: var(--btn-color);
-  background-color: var(--btn-bg-dark);
-}
-
-.btn-nav:active {
-  color: var(--btn-color);
-  background-color: var(--btn-bg-darker);
-}
-
 .btn-nav .mr-2 {
   margin-right: 8px;
 }

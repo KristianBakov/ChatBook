@@ -23,7 +23,7 @@ export const Layout = ({ children }) => {
       <Row>
         <Col
           xs="12"
-          md="3"
+          md="2"
           className={`sidebar-container ${isSidebarOpen ? "open" : ""}`}
         >
           <Sidebar />
