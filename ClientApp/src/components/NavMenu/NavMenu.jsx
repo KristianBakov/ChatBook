@@ -11,6 +11,7 @@ import "./NavMenu.css";
 import IconCircleButton from "../IconCircleButton/IconCircleButton";
 import ThemeToggleDev from "../ThemeToggle/ThemeToggleDev";
 import { MdHome } from "react-icons/md";
+import IconRectangleButton from "../IconRectangleButton/IconRectangleButton";
 
 const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
   return (
@@ -30,6 +31,9 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           <IconCircleButton icon={MdHome} tag={Link} to="/">
             Home
           </IconCircleButton>
+          <IconRectangleButton icon={MdHome} tag={Link} to="/">
+            Home
+          </IconRectangleButton>
         </NavItem>
         <Collapse
           className="d-sm-inline-flex flex-sm-row-reverse d-md-none"

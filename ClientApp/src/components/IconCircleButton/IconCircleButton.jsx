@@ -4,7 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 import "./IconCircleButton.css";
 
 const IconCircleButton = ({ icon: Icon, isNavLink, to }) => {
-  const buttonClasses = "btn btn-circle";
+  const buttonClasses = "btn btn-circle mx-2 align-items-center";
 
   if (isNavLink && to) {
     return (
