@@ -1,4 +1,4 @@
-.btn-rect {
+.btn-tab {
   width: 80px;
   height: 80%;
   display: inline-block;
@@ -6,6 +6,10 @@
   margin-bottom: 0;
 }
 
-.rect-icon {
+.btn-tab:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.tab-icon {
   font-size: 1.5rem;
 }

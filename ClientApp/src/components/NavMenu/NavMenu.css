@@ -4,6 +4,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   list-style: none;
   border-bottom-color: var(--navbar-line-color) !important;
+  height: var(--header-height);
+  padding: 0;
+}
+
+.navbar > .container-fluid {
+  height: 100%;
+}
+
+.tabs-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .navbar-brand {

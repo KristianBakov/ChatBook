@@ -8,10 +8,10 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
-import IconCircleButton from "../IconCircleButton/IconCircleButton";
 import ThemeToggleDev from "../ThemeToggle/ThemeToggleDev";
 import { MdHome } from "react-icons/md";
-import IconRectangleButton from "../IconRectangleButton/IconRectangleButton";
+import { FaUserFriends, FaCompass, FaRegUserCircle } from "react-icons/fa";
+import NavTabButton from "./NavTabButton/NavTabButton";
 
 const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
   return (
@@ -27,13 +27,19 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
         <NavItem>
           <ThemeToggleDev />
         </NavItem>
-        <NavItem>
-          <IconCircleButton icon={MdHome} tag={Link} to="/">
+        <NavItem className="tabs-container">
+          <NavTabButton icon={MdHome} tag={Link} to="/">
             Home
-          </IconCircleButton>
-          <IconRectangleButton icon={MdHome} tag={Link} to="/">
-            Home
-          </IconRectangleButton>
+          </NavTabButton>
+          <NavTabButton icon={FaUserFriends} tag={Link} to="/">
+            Friends
+          </NavTabButton>
+          <NavTabButton icon={FaCompass} tag={Link} to="/">
+            Discover
+          </NavTabButton>
+          <NavTabButton icon={FaRegUserCircle} tag={Link} to="/">
+            Profile
+          </NavTabButton>
         </NavItem>
         <Collapse
           className="d-sm-inline-flex flex-sm-row-reverse d-md-none"
