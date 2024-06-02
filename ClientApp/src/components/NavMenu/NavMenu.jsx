@@ -17,13 +17,15 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
   return (
     <header>
       <Navbar
-        className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3"
+        className="navbar-expand-md navbar-toggleable-md border-bottom box-shadow mb-3"
         light
       >
         <NavbarBrand tag={Link} to="/">
           ChatBook
         </NavbarBrand>
+
         <NavbarToggler onClick={toggleSidebar} className="mr-2" />
+
         <NavItem>
           <ThemeToggleDev />
         </NavItem>
@@ -41,11 +43,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
             Profile
           </NavTabButton>
         </NavItem>
-        <Collapse
-          className="d-flex d-md-none flex-row-reverse"
-          isOpen={isSidebarOpen}
-          navbar
-        >
+        <Collapse isOpen={isSidebarOpen} navbar>
           {/* extra menu items for the collapse here */}
         </Collapse>
       </Navbar>
