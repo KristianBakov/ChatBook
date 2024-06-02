@@ -12,6 +12,8 @@
   --sidebar-bg-color: #e9ecef;
   --navbar-line-color: #e9ecef;
   --btn-color: #000000;
+  --tooltip-bg-color: #39393a;
+  --tooltip-text-color: #ffffff;
   --color-toggle-light: #f6d447;
   --color-toggle-dark: #2d0697;
   --brand-color: #007bff;
@@ -29,6 +31,8 @@
   --sidebar-bg-color: #3a3f44;
   --navbar-line-color: #3a3f44;
   --btn-color: #ffffff;
+  --tooltip-bg-color: #c8c8c8;
+  --tooltip-text-color: #000000;
   --brand-color: #6eb4ff;
   --brand-color-darker: #2c3647;
 }

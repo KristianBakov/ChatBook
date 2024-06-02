@@ -25,6 +25,7 @@ const NavTabButton = ({ icon: Icon, isActive, to, children }) => {
         isOpen={tooltipOpen}
         target={`nav-tab-button-${children}`}
         toggle={toggleTooltip}
+        className="tab-tooltip"
       >
         {children}
       </Tooltip>

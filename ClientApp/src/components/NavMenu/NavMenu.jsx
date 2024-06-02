@@ -17,7 +17,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
   return (
     <header>
       <Navbar
-        className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3"
+        className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3"
         light
       >
         <NavbarBrand tag={Link} to="/">
@@ -27,7 +27,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
         <NavItem>
           <ThemeToggleDev />
         </NavItem>
-        <NavItem className="tabs-container">
+        <NavItem className="tabs-container d-none d-md-flex">
           <NavTabButton icon={MdHome} tag={Link} to="/">
             Home
           </NavTabButton>
@@ -42,7 +42,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           </NavTabButton>
         </NavItem>
         <Collapse
-          className="d-sm-inline-flex flex-sm-row-reverse d-md-none"
+          className="d-flex d-md-none flex-row-reverse"
           isOpen={isSidebarOpen}
           navbar
         >
