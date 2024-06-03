@@ -65,6 +65,6 @@ body {
 }
 
 .btn:active {
-  color: var(--btn-color) !important;
-  background-color: var(--btn-bg-darker) !important;
+  color: var(--btn-color);
+  background-color: var(--btn-bg-darker);
 }

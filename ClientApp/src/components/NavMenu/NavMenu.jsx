@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -14,6 +14,12 @@ import { FaUserFriends, FaCompass, FaRegUserCircle } from "react-icons/fa";
 import NavTabButton from "./NavTabButton/NavTabButton";
 
 const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
+  const [activeTab, setActiveTab] = useState("Home");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <header>
       <Navbar
@@ -30,16 +36,40 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           <ThemeToggleDev />
         </NavItem>
         <NavItem className="tabs-container d-none d-md-flex">
-          <NavTabButton icon={MdHome} tag={Link} to="/">
+          <NavTabButton
+            icon={MdHome}
+            tag={Link}
+            to="/"
+            isActive={activeTab === "Home"}
+            onClick={() => handleTabClick("Home")}
+          >
             Home
           </NavTabButton>
-          <NavTabButton icon={FaUserFriends} tag={Link} to="/">
+          <NavTabButton
+            icon={FaUserFriends}
+            tag={Link}
+            to="/friends"
+            isActive={activeTab === "Friends"}
+            onClick={() => handleTabClick("Friends")}
+          >
             Friends
           </NavTabButton>
-          <NavTabButton icon={FaCompass} tag={Link} to="/">
+          <NavTabButton
+            icon={FaCompass}
+            tag={Link}
+            to="/"
+            isActive={activeTab === "Discover"}
+            onClick={() => handleTabClick("Discover")}
+          >
             Discover
           </NavTabButton>
-          <NavTabButton icon={FaRegUserCircle} tag={Link} to="/">
+          <NavTabButton
+            icon={FaRegUserCircle}
+            tag={Link}
+            to="/"
+            isActive={activeTab === "Profile"}
+            onClick={() => handleTabClick("Profile")}
+          >
             Profile
           </NavTabButton>
         </NavItem>

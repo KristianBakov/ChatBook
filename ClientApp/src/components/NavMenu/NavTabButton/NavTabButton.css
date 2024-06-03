@@ -1,17 +1,46 @@
 .btn-tab {
   width: 80px;
   height: 80%;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
+  background-color: transparent !important;
+  color: var(--btn-color);
+}
+
+.btn-tab:hover {
+  background-color: var(--btn-bg-dark) !important;
+  color: var(--btn-color) !important;
+}
+
+.btn-tab:active {
+  background-color: transparent !important;
+  color: var(--btn-color) !important;
+}
+
+.btn-tab.selected {
+  height: var(--header-height);
+  border-radius: 0;
+  border-bottom: 4px solid var(--brand-color);
+  color: var(--brand-color);
+}
+
+.btn-tab.selected:hover {
+  border-radius: 0;
+  border-bottom: 4px solid var(--brand-color);
+  background-color: transparent !important;
+  color: var(--brand-color) !important;
 }
 
 .btn-tab:not(:first-of-type) {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .tab-icon {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 
 .tab-tooltip .tooltip-inner {
