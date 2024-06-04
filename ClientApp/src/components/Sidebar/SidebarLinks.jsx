@@ -7,26 +7,34 @@ const SidebarLinks = () => {
     <div className=" bg-transparent sidebar py-4">
       <Nav vertical>
         <NavItem>
-          <IconTextButton isNavLink to="/">
+          <IconTextButton className="w-100" isNavLink to="/">
             Home
           </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton isNavLink to="/profile">
+          <IconTextButton className="w-100" isNavLink to="/profile">
             Profile
           </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton to="/messages">Messages</IconTextButton>
+          <IconTextButton className="w-100" to="/messages">
+            Messages
+          </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton to="/notifications">Notifications</IconTextButton>
+          <IconTextButton className="w-100" to="/notifications">
+            Notifications
+          </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton to="/settings">Settings</IconTextButton>
+          <IconTextButton className="w-100" to="/settings">
+            Settings
+          </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton to="/logout">Logout</IconTextButton>
+          <IconTextButton className="w-100" to="/logout">
+            Logout
+          </IconTextButton>
         </NavItem>
       </Nav>
     </div>

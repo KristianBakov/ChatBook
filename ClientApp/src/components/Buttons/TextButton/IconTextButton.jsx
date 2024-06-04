@@ -4,7 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 import "./TextButton.css";
 
 const IconTextButton = ({ icon: Icon, children, isNavLink, to }) => {
-  const buttonClasses = "btn btn-nav d-flex w-100 text-left align-items-center";
+  const buttonClasses = "btn btn-nav text-left align-items-center";
 
   if (isNavLink && to) {
     return (
