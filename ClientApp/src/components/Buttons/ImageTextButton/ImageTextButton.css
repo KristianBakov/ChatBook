@@ -1,0 +1,17 @@
+/* IconButton.css */
+.btn-nav {
+  background-color: transparent !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-nav:hover {
+  background-color: var(--btn-bg-dark) !important;
+}
+
+.btn-nav .btn-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
