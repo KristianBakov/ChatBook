@@ -4,14 +4,28 @@
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;
+  align-items: center;
+}
+
+.btn-nav-img {
+  padding: 8px;
 }
 
 .btn-nav:hover {
   background-color: var(--btn-bg-dark) !important;
 }
 
-.btn-nav .btn-img {
-  width: 20px;
-  height: 20px;
+.btn-nav .mr-2 {
   margin-right: 8px;
+}
+
+.btn-nav .nav-icon {
+  font-size: 1.3rem;
+}
+
+.btn-nav .btn-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  border-radius: 50%;
 }

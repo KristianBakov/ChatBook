@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, NavItem } from "reactstrap";
-import IconTextButton from "../IconTextButton/IconTextButton";
+import IconTextButton from "../Buttons/TextButton/IconTextButton";
 
 const SidebarLinks = () => {
   return (

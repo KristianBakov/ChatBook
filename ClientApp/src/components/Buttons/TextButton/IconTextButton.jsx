@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "reactstrap";
 import { Link as RouterLink } from "react-router-dom";
-import "./IconTextButton.css";
+import "./TextButton.css";
 
 const IconTextButton = ({ icon: Icon, children, isNavLink, to }) => {
   const buttonClasses = "btn btn-nav d-flex w-100 text-left align-items-center";
