@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "reactstrap";
 import { Link as RouterLink } from "react-router-dom";
+import classNames from "classnames";
 import "./TextButton.css";
 
-const IconTextButton = ({ icon: Icon, children, isNavLink, to }) => {
-  const buttonClasses = "btn btn-nav text-left align-items-center";
+const IconTextButton = ({ icon: Icon, children, isNavLink, to, className }) => {
+  const buttonClasses = classNames("btn btn-nav align-items-center", className);
 
   if (isNavLink && to) {
     return (

@@ -5,7 +5,7 @@ import IconTextButton from "../Buttons/TextButton/IconTextButton";
 const SidebarLinks = () => {
   return (
     <div className=" bg-transparent sidebar py-4">
-      <Nav vertical className="align-items-start">
+      <Nav vertical>
         <NavItem>
           <IconTextButton isNavLink to="/">
             Home
