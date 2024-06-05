@@ -12,7 +12,10 @@
 }
 
 .post-button {
+  display: flex;
   text-align: center !important;
+  align-items: center;
+  justify-content: center;
 }
 
 .post-title {
@@ -31,4 +34,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.post-user-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.post-user-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
 }

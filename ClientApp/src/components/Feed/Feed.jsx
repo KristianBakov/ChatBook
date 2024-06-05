@@ -25,7 +25,7 @@ const Feed = () => {
           <Post
             key={post.id}
             title={post.user}
-            message={post.content}
+            message={post.message}
             hasImage
           />
         ))}

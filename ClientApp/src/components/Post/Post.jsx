@@ -19,12 +19,19 @@ const Post = ({ title, time = "just now", message, hasImage, imgSrc }) => {
   return (
     <Card className="mb-3">
       <CardBody>
-        <Container className="post-header">
-          <Container className="post-title-container">
-            <CardLink className="post-title" href="/">
-              {title}
-            </CardLink>
-            <CardSubtitle className="post-time">{time}</CardSubtitle>
+        <Container className="post-header px-0 pb-2">
+          <Container className="post-user-container p-0">
+            <img
+              className="post-user-image"
+              src="https://loremflickr.com/50/50"
+              alt="User"
+            />
+            <Container className="post-title-container pl-2">
+              <CardLink className="post-title" href="/">
+                {title}
+              </CardLink>
+              <CardSubtitle className="post-time">{time}</CardSubtitle>
+            </Container>
           </Container>
 
           <div className="post-actions-container">
