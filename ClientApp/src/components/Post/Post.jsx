@@ -18,7 +18,7 @@ import "./Post.css";
 const Post = ({ title, time = "just now", message, hasImage, imgSrc }) => {
   return (
     <Card className="mb-3">
-      <CardBody>
+      <CardBody className="post-wrapper">
         <Container className="post-header px-0 pb-2">
           <Container className="post-user-container p-0">
             <img

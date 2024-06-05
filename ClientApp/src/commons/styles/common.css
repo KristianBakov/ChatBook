@@ -7,6 +7,7 @@
   --bg-color-darker: #e9ecef;
   --btn-bg-dark: #e4e6e9;
   --btn-bg-darker: #d1d3d8;
+  --post-bg-color: #ffffff;
   --text-color: #000000;
   --text-color-light: #6c757d;
   --navbar-bg-color: #ffffff;
@@ -27,6 +28,7 @@
   --bg-color-darker: #23272b;
   --btn-bg-dark: #303031;
   --btn-bg-darker: #1e1e1e;
+  --post-bg-color: #23272b;
   --text-color: #ffffff;
   --text-color-light: #6c757d;
   --navbar-bg-color: #23272b;
@@ -45,14 +47,20 @@ body {
   margin: 0;
 }
 
-.post-container {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
 .container-clean {
   padding: 0 !important;
   overflow-x: hidden;
+}
+
+.card {
+  border: none;
+  background-color: var(--post-bg-color);
+  color: var(--text-color);
+}
+
+.card-body {
+  padding: 16px;
+  border-radius: 16px;
 }
 
 .btn {
