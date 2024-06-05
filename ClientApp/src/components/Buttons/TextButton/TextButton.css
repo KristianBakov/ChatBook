@@ -5,6 +5,7 @@
   border-radius: 4px;
   text-decoration: none;
   align-items: center;
+  width: 100% !important;
 }
 
 .btn-nav-img {
@@ -13,6 +14,10 @@
 
 .btn-nav:hover {
   background-color: var(--btn-bg-dark) !important;
+}
+
+.btn-nav:active {
+  background-color: var(--btn-bg-darker) !important;
 }
 
 .btn-nav .mr-2 {

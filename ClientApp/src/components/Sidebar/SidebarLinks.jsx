@@ -5,36 +5,28 @@ import IconTextButton from "../Buttons/TextButton/IconTextButton";
 const SidebarLinks = () => {
   return (
     <div className=" bg-transparent sidebar py-4">
-      <Nav vertical>
+      <Nav vertical className="align-items-start">
         <NavItem>
-          <IconTextButton className="w-100" isNavLink to="/">
+          <IconTextButton isNavLink to="/">
             Home
           </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton className="w-100" isNavLink to="/profile">
+          <IconTextButton isNavLink to="/profile">
             Profile
           </IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton className="w-100" to="/messages">
-            Messages
-          </IconTextButton>
+          <IconTextButton to="/messages">Messages</IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton className="w-100" to="/notifications">
-            Notifications
-          </IconTextButton>
+          <IconTextButton to="/notifications">Notifications</IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton className="w-100" to="/settings">
-            Settings
-          </IconTextButton>
+          <IconTextButton to="/settings">Settings</IconTextButton>
         </NavItem>
         <NavItem>
-          <IconTextButton className="w-100" to="/logout">
-            Logout
-          </IconTextButton>
+          <IconTextButton to="/logout">Logout</IconTextButton>
         </NavItem>
       </Nav>
     </div>

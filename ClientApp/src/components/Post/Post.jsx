@@ -8,13 +8,17 @@ import {
   CardLink,
 } from "reactstrap";
 import IconTextButton from "../Buttons/TextButton/IconTextButton";
+import { AiOutlineLike } from "react-icons/ai";
+import { FaRegComment } from "react-icons/fa";
+import { RiShareForwardLine } from "react-icons/ri";
+import "./Post.css";
 
-const Post = ({ title, time, message, hasImage, imgSrc }) => {
+const Post = ({ title, time = "just now", message, hasImage, imgSrc }) => {
   return (
     <Card>
       <CardBody>
         <CardLink href="/">{title}</CardLink>
-        <CardSubtitle>{time + " m"}</CardSubtitle>
+        <CardSubtitle className="post-time">{time}</CardSubtitle>
         <CardText>{message}</CardText>
       </CardBody>
 
@@ -28,13 +32,25 @@ const Post = ({ title, time, message, hasImage, imgSrc }) => {
       )}
 
       <CardBody className="post-button-container">
-        <IconTextButton className="post-button" color="primary">
+        <IconTextButton
+          icon={AiOutlineLike}
+          className="post-button"
+          color="primary"
+        >
           Like
         </IconTextButton>
-        <IconTextButton className="post-button" color="secondary">
+        <IconTextButton
+          icon={FaRegComment}
+          className="post-button"
+          color="secondary"
+        >
           Comment
         </IconTextButton>
-        <IconTextButton className="post-button" color="danger">
+        <IconTextButton
+          icon={RiShareForwardLine}
+          className="post-button"
+          color="danger"
+        >
           Share
         </IconTextButton>
       </CardBody>
