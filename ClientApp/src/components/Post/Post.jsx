@@ -32,7 +32,7 @@ const Post = ({
           <Container className="post-user-container p-0">
             <img
               className="post-user-image"
-              src="https://loremflickr.com/50/50"
+              src="https://loremflickr.com/42/42"
               alt="User"
             />
             <Container className="post-title-container pl-2">
@@ -62,6 +62,14 @@ const Post = ({
       )}
 
       <CardBody className="post-bottom-group">
+        <Container className="post-stats">
+          <CardLink className="post-stat-link" href="/">
+            {likeNum} Likes
+          </CardLink>
+          <CardLink className="post-stat-link" href="/">
+            {commentNum} Comments
+          </CardLink>
+        </Container>
         <HrContainer className="post-button-container">
           <IconTextButton
             icon={AiOutlineLike}

@@ -9,12 +9,16 @@ const Feed = () => {
       user: "John Doe",
       title: "Hi",
       message: "Hello, this is my first post!",
+      likes: 5,
+      comments: 2,
     },
     {
       id: 2,
       user: "Jane Smith",
       title: "Hi there!",
       message: "React is awesome!",
+      likes: 11,
+      comments: 3,
     },
   ];
 
@@ -26,6 +30,8 @@ const Feed = () => {
             key={post.id}
             title={post.user}
             message={post.message}
+            likeNum={post.likes}
+            commentNum={post.comments}
             hasImage
           />
         ))}

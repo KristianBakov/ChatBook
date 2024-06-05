@@ -72,3 +72,21 @@
   border-top: 1px solid var(--text-color-light);
   border-bottom: 1px solid var(--text-color-light);
 }
+
+.post-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.post-stat-link {
+  text-decoration: none;
+  color: var(--text-color-light);
+}
+
+.post-stat-link:hover {
+  text-decoration: underline;
+  color: var(--text-color);
+}

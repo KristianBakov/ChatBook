@@ -51,7 +51,7 @@ hr {
   background-color: var(--text-color-light);
   width: 100%;
   height: 1px;
-  margin: 2px 0;
+  margin: 8px 0;
   padding: 0;
 }
 
@@ -64,6 +64,7 @@ hr {
   border: none;
   background-color: var(--post-bg-color);
   color: var(--text-color);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
