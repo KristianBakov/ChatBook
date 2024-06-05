@@ -6,19 +6,33 @@ import {
   CardBody,
   CardSubtitle,
   CardLink,
+  Container,
 } from "reactstrap";
 import IconTextButton from "../Buttons/TextButton/IconTextButton";
+import IconCircleButton from "../Buttons/IconCircleButton/IconCircleButton";
 import { AiOutlineLike } from "react-icons/ai";
-import { FaRegComment } from "react-icons/fa";
+import { FaRegComment, FaBookmark } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
 import "./Post.css";
 
 const Post = ({ title, time = "just now", message, hasImage, imgSrc }) => {
   return (
-    <Card>
+    <Card className="mb-3">
       <CardBody>
-        <CardLink href="/">{title}</CardLink>
-        <CardSubtitle className="post-time">{time}</CardSubtitle>
+        <Container className="post-header">
+          <Container className="post-title-container">
+            <CardLink className="post-title" href="/">
+              {title}
+            </CardLink>
+            <CardSubtitle className="post-time">{time}</CardSubtitle>
+          </Container>
+
+          <div className="post-actions-container">
+            <IconCircleButton icon={FaBookmark} className="post-action">
+              Save
+            </IconCircleButton>
+          </div>
+        </Container>
         <CardText>{message}</CardText>
       </CardBody>
 

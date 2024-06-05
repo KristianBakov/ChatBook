@@ -20,7 +20,7 @@ const Feed = () => {
 
   return (
     <Container className="col feed-wrapper">
-      <div className="col-md-10">
+      <div className="col-md-8 px-3">
         {posts.map((post) => (
           <Post
             key={post.id}
