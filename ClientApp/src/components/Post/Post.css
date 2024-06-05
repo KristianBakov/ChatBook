@@ -2,11 +2,16 @@
   background-color: var(--post-bg-color);
 }
 
+.post-bottom-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .post-button-container {
   display: flex;
   flex-direction: row !important;
-  padding: 8px 16px;
-  border-radius: 4px;
   text-decoration: none;
   color: var(--text-color);
   background-color: var(--post-bg-color);
@@ -61,4 +66,9 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
+}
+
+.post-image {
+  border-top: 1px solid var(--text-color-light);
+  border-bottom: 1px solid var(--text-color-light);
 }

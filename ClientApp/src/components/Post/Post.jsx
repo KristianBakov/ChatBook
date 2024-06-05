@@ -8,6 +8,7 @@ import {
   CardLink,
   Container,
 } from "reactstrap";
+import HrContainer from "../Containers/HrContainer";
 import IconTextButton from "../Buttons/TextButton/IconTextButton";
 import IconCircleButton from "../Buttons/IconCircleButton/IconCircleButton";
 import { AiOutlineLike } from "react-icons/ai";
@@ -15,7 +16,15 @@ import { FaRegComment, FaBookmark } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
 import "./Post.css";
 
-const Post = ({ title, time = "just now", message, hasImage, imgSrc }) => {
+const Post = ({
+  title,
+  time = "just now",
+  message,
+  hasImage,
+  imgSrc,
+  likeNum,
+  commentNum,
+}) => {
   return (
     <Card className="mb-3">
       <CardBody className="post-wrapper">
@@ -45,35 +54,37 @@ const Post = ({ title, time = "just now", message, hasImage, imgSrc }) => {
 
       {hasImage && (
         <CardImg
-          className="rounded-0"
+          className="rounded-0 post-image"
           width="100%"
           src="https://loremflickr.com/640/480?lock=1"
           alt="Post Image"
         />
       )}
 
-      <CardBody className="post-button-container">
-        <IconTextButton
-          icon={AiOutlineLike}
-          className="post-button"
-          color="primary"
-        >
-          Like
-        </IconTextButton>
-        <IconTextButton
-          icon={FaRegComment}
-          className="post-button"
-          color="secondary"
-        >
-          Comment
-        </IconTextButton>
-        <IconTextButton
-          icon={RiShareForwardLine}
-          className="post-button"
-          color="danger"
-        >
-          Share
-        </IconTextButton>
+      <CardBody className="post-bottom-group">
+        <HrContainer className="post-button-container">
+          <IconTextButton
+            icon={AiOutlineLike}
+            className="post-button"
+            color="primary"
+          >
+            Like
+          </IconTextButton>
+          <IconTextButton
+            icon={FaRegComment}
+            className="post-button"
+            color="secondary"
+          >
+            Comment
+          </IconTextButton>
+          <IconTextButton
+            icon={RiShareForwardLine}
+            className="post-button"
+            color="danger"
+          >
+            Share
+          </IconTextButton>
+        </HrContainer>
       </CardBody>
     </Card>
   );
