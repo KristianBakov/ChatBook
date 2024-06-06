@@ -81,9 +81,6 @@ const PhotoCollage = ({
         <ModalHeader toggle={handleCloseModal}></ModalHeader>
         <ModalBody>
           <div className="modal-collage">
-            <button className="modal-arrow left" onClick={showPrevImage}>
-              <span>&lt;</span>
-            </button>
             <div className="modal-photo-container">
               <img
                 src={photos[currentIndex].source}
@@ -91,9 +88,17 @@ const PhotoCollage = ({
                 className="modal-photo"
               />
             </div>
-            <button className="modal-arrow right" onClick={showNextImage}>
-              <span>&gt;</span>
-            </button>
+
+            <div className="side-button left" onClick={showPrevImage}>
+              <button className="modal-arrow left">
+                <span>&lt;</span>
+              </button>
+            </div>
+            <div className="side-button right" onClick={showNextImage}>
+              <button className="modal-arrow right">
+                <span>&gt;</span>
+              </button>
+            </div>
           </div>
         </ModalBody>
       </Modal>
