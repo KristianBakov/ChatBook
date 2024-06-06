@@ -10,6 +10,16 @@
   margin-bottom: 4px;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-title {
+  font-size: 1.5rem;
+  position: fixed;
+}
+
 .top-photo {
   width: 100%;
   height: auto; /* Maintain aspect ratio */

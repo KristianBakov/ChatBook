@@ -53,7 +53,7 @@ const Post = ({
 
       {photos && photos.length > 0 && (
         <div className="post-collage-container">
-          <PhotoCollage photos={photos} />
+          <PhotoCollage postOwner={title} photos={photos} />
         </div>
       )}
 

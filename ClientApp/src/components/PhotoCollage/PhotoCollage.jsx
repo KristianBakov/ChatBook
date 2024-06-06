@@ -3,6 +3,7 @@ import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import "./PhotoCollage.css";
 
 const PhotoCollage = ({
+  postOwner,
   photos,
   topRowPhotoCount = 1,
   bottomRowPhotoCount = 4,
@@ -78,7 +79,7 @@ const PhotoCollage = ({
         centered
         className="photo-modal"
       >
-        <ModalHeader toggle={handleCloseModal}></ModalHeader>
+        <ModalHeader toggle={handleCloseModal}>{postOwner}'s post</ModalHeader>
         <ModalBody>
           <div className="modal-collage">
             <div className="modal-photo-container">
