@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import "./PhotoCollage.css";
 
-const PhotoCollage = ({ photos }) => {
+const PhotoCollage = ({
+  photos,
+  topRowPhotoCount = 1,
+  bottomRowPhotoCount = 4,
+}) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -25,9 +29,6 @@ const PhotoCollage = ({ photos }) => {
       prevIndex === photos.length - 1 ? 0 : prevIndex + 1
     );
   };
-
-  const topRowPhotoCount = 1;
-  const bottomRowPhotoCount = 4;
 
   return (
     <div className="photo-collage">
@@ -55,7 +56,7 @@ const PhotoCollage = ({ photos }) => {
                   onClick={() => handleOpenModal(index + topRowPhotoCount)}
                 />
                 {photos.length > bottomRowPhotoCount &&
-                  index === bottomRowPhotoCount - 1 && (
+                  index === bottomRowPhotoCount - 2 && (
                     <div
                       className="overlay"
                       onClick={() => handleOpenModal(index + topRowPhotoCount)}
@@ -71,6 +72,10 @@ const PhotoCollage = ({ photos }) => {
       <Modal
         isOpen={modalOpen}
         toggle={handleCloseModal}
+        size="xl"
+        backdrop
+        fade={false}
+        centered
         className="photo-modal"
       >
         <ModalHeader toggle={handleCloseModal}></ModalHeader>

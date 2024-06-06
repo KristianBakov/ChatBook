@@ -28,6 +28,7 @@ const Feed = () => {
     { source: "https://loremflickr.com/640/480?lock=3" },
     { source: "https://loremflickr.com/640/480?lock=4" },
     { source: "https://loremflickr.com/640/480?lock=5" },
+    { source: "https://loremflickr.com/640/480?lock=6" },
   ];
 
   return (
