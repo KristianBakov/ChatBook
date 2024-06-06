@@ -66,6 +66,14 @@
   overflow: hidden;
 }
 
+.modal-content {
+  background-color: var(--post-bg-color);
+}
+
+.modal-header {
+  border-bottom-color: var(--text-color-light);
+}
+
 .modal-photo {
   width: 100%;
   height: auto;
