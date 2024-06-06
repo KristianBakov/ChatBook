@@ -84,6 +84,7 @@
 .post-stat-link {
   text-decoration: none;
   color: var(--text-color-light);
+  font-size: 0.9rem;
 }
 
 .post-stat-link:hover {

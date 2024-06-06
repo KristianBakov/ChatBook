@@ -71,25 +71,13 @@ const Post = ({
           </CardLink>
         </Container>
         <HrContainer className="post-button-container">
-          <IconTextButton
-            icon={AiOutlineLike}
-            className="post-button"
-            color="primary"
-          >
+          <IconTextButton icon={AiOutlineLike} className="post-button">
             Like
           </IconTextButton>
-          <IconTextButton
-            icon={FaRegComment}
-            className="post-button"
-            color="secondary"
-          >
+          <IconTextButton icon={FaRegComment} className="post-button">
             Comment
           </IconTextButton>
-          <IconTextButton
-            icon={RiShareForwardLine}
-            className="post-button"
-            color="danger"
-          >
+          <IconTextButton icon={RiShareForwardLine} className="post-button">
             Share
           </IconTextButton>
         </HrContainer>

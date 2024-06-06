@@ -57,7 +57,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           <NavTabButton
             icon={FaCompass}
             tag={Link}
-            to="/"
+            to="/discover"
             isActive={activeTab === "Discover"}
             onClick={() => handleTabClick("Discover")}
           >
@@ -66,7 +66,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           <NavTabButton
             icon={FaRegUserCircle}
             tag={Link}
-            to="/"
+            to="/profile/1"
             isActive={activeTab === "Profile"}
             onClick={() => handleTabClick("Profile")}
           >
