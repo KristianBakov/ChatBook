@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  CardImg,
   CardText,
   CardBody,
   CardSubtitle,
@@ -14,16 +13,16 @@ import IconCircleButton from "../Buttons/IconCircleButton/IconCircleButton";
 import { AiOutlineLike } from "react-icons/ai";
 import { FaRegComment, FaBookmark } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
+import PhotoCollage from "../PhotoCollage/PhotoCollage";
 import "./Post.css";
 
 const Post = ({
   title,
   time = "just now",
   message,
-  hasImage,
-  imgSrc,
   likeNum,
   commentNum,
+  photos, // New prop for photos array
 }) => {
   return (
     <Card className="mb-3">
@@ -52,13 +51,10 @@ const Post = ({
         <CardText>{message}</CardText>
       </CardBody>
 
-      {hasImage && (
-        <CardImg
-          className="rounded-0 post-image"
-          width="100%"
-          src="https://loremflickr.com/640/480?lock=1"
-          alt="Post Image"
-        />
+      {photos && photos.length > 0 && (
+        <div className="post-collage-container">
+          <PhotoCollage photos={photos} />
+        </div>
       )}
 
       <CardBody className="post-bottom-group">

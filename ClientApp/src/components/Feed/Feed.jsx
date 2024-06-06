@@ -22,6 +22,14 @@ const Feed = () => {
     },
   ];
 
+  const photos = [
+    { source: "https://loremflickr.com/640/480?lock=1" },
+    { source: "https://loremflickr.com/640/480?lock=2" },
+    { source: "https://loremflickr.com/640/480?lock=3" },
+    { source: "https://loremflickr.com/640/480?lock=4" },
+    { source: "https://loremflickr.com/640/480?lock=5" },
+  ];
+
   return (
     <Container className="col feed-wrapper">
       <div className="col-md-8 px-3">
@@ -32,7 +40,7 @@ const Feed = () => {
             message={post.message}
             likeNum={post.likes}
             commentNum={post.comments}
-            hasImage
+            photos={photos}
           />
         ))}
       </div>

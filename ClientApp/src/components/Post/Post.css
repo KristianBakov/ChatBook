@@ -91,3 +91,8 @@
   text-decoration: underline;
   color: var(--text-color);
 }
+
+.post-collage-container {
+  width: 100%;
+  margin: 0 auto;
+}
