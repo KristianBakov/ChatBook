@@ -145,7 +145,7 @@
   bottom: 0;
   width: 100px;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0);
   color: white;
   font-size: 1.5rem;
   display: flex;
@@ -153,7 +153,7 @@
   justify-content: center;
   cursor: pointer;
   transition: background 0.3s, opacity 0.3s;
-  opacity: 0.5;
+  opacity: 0;
   z-index: 5;
 }
 
@@ -167,7 +167,7 @@
 
 .side-button:hover {
   background: rgba(0, 0, 0, 0.6);
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .side-button:hover .modal-arrow.left {
@@ -179,12 +179,27 @@
 }
 
 @media (max-width: 768px) {
+  .modal-arrow.left {
+    left: 10px;
+  }
+
+  .modal-arrow.right {
+    right: 10px;
+  }
   .bottom-row {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
+  .modal-arrow.left {
+    left: 0;
+  }
+
+  .modal-arrow.right {
+    right: 0;
+  }
+
   .bottom-row {
     grid-template-columns: 1fr;
   }
