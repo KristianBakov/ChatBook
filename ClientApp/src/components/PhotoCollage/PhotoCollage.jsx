@@ -82,7 +82,7 @@ const PhotoCollage = ({
         <ModalBody>
           <div className="modal-collage">
             <button className="modal-arrow left" onClick={showPrevImage}>
-              &#9664;
+              <span>&lt;</span>
             </button>
             <div className="modal-photo-container">
               <img
@@ -92,7 +92,7 @@ const PhotoCollage = ({
               />
             </div>
             <button className="modal-arrow right" onClick={showNextImage}>
-              &#9654;
+              <span>&gt;</span>
             </button>
           </div>
         </ModalBody>
