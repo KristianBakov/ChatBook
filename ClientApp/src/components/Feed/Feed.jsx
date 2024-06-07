@@ -34,18 +34,16 @@ const Feed = () => {
 
   return (
     <Container className="col feed-wrapper">
-      <div className="col-md-8 px-3">
-        {posts.map((post) => (
-          <Post
-            key={post.id}
-            title={post.user}
-            message={post.message}
-            likeNum={post.likes}
-            commentNum={post.comments}
-            photos={photos}
-          />
-        ))}
-      </div>
+      {posts.map((post) => (
+        <Post
+          key={post.id}
+          title={post.user}
+          message={post.message}
+          likeNum={post.likes}
+          commentNum={post.comments}
+          photos={photos}
+        />
+      ))}
     </Container>
   );
 };

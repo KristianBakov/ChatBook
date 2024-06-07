@@ -22,13 +22,21 @@ export const Layout = ({ children }) => {
     <Container fluid className="container-clean">
       <NavMenu toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
       <Row className="layout-row">
-        <MainSidebar isSidebarOpen={isSidebarOpen} />
+        <MainSidebar
+          md="3"
+          isSidebarOpen={isSidebarOpen}
+          className="d-none d-md-block"
+        />
 
-        <Col xs="12" md={isSidebarOpen ? "12" : "9"}>
+        <Col xs="12" md={isSidebarOpen ? "12" : "6"}>
           {!isSidebarOpen && children}
         </Col>
 
-        <AdSidebar />
+        <AdSidebar
+          md="3"
+          isSidebarOpen={isSidebarOpen}
+          className="d-none d-md-block"
+        />
       </Row>
     </Container>
   );

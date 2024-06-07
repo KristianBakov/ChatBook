@@ -5,11 +5,7 @@ import { Col } from "reactstrap";
 
 const MainSidebar = ({ isSidebarOpen }) => {
   return (
-    <Col
-      xs="12"
-      md="2"
-      className={`sidebar-container ${isSidebarOpen ? "open" : ""}`}
-    >
+    <Col className={`sidebar-container ${isSidebarOpen ? "open" : ""}`}>
       <SidebarLinks />
       <FriendsList />
     </Col>

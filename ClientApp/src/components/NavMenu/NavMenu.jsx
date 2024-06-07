@@ -5,6 +5,7 @@ import {
   NavbarBrand,
   NavbarToggler,
   NavItem,
+  Nav,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
@@ -28,51 +29,52 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
       >
         <NavbarBrand tag={Link} to="/">
           ChatBook
+          <ThemeToggleDev />
         </NavbarBrand>
 
-        <NavbarToggler onClick={toggleSidebar} className="mr-2" />
+        <NavbarToggler onClick={toggleSidebar} className="mx-2" />
 
-        <NavItem>
-          <ThemeToggleDev />
-        </NavItem>
-        <NavItem className="tabs-container d-none d-md-flex">
-          <NavTabButton
-            icon={MdHome}
-            tag={Link}
-            to="/"
-            isActive={activeTab === "Home"}
-            onClick={() => handleTabClick("Home")}
-          >
-            Home
-          </NavTabButton>
-          <NavTabButton
-            icon={FaUserFriends}
-            tag={Link}
-            to="/friends"
-            isActive={activeTab === "Friends"}
-            onClick={() => handleTabClick("Friends")}
-          >
-            Friends
-          </NavTabButton>
-          <NavTabButton
-            icon={FaCompass}
-            tag={Link}
-            to="/discover"
-            isActive={activeTab === "Discover"}
-            onClick={() => handleTabClick("Discover")}
-          >
-            Discover
-          </NavTabButton>
-          <NavTabButton
-            icon={FaRegUserCircle}
-            tag={Link}
-            to="/profile/1"
-            isActive={activeTab === "Profile"}
-            onClick={() => handleTabClick("Profile")}
-          >
-            Profile
-          </NavTabButton>
-        </NavItem>
+        <Nav className="tabs-container d-none d-md-flex">
+          <NavItem>
+            <NavTabButton
+              icon={MdHome}
+              tag={Link}
+              to="/"
+              isActive={activeTab === "Home"}
+              onClick={() => handleTabClick("Home")}
+            >
+              Home
+            </NavTabButton>
+            <NavTabButton
+              icon={FaUserFriends}
+              tag={Link}
+              to="/friends"
+              isActive={activeTab === "Friends"}
+              onClick={() => handleTabClick("Friends")}
+            >
+              Friends
+            </NavTabButton>
+            <NavTabButton
+              icon={FaCompass}
+              tag={Link}
+              to="/discover"
+              isActive={activeTab === "Discover"}
+              onClick={() => handleTabClick("Discover")}
+            >
+              Discover
+            </NavTabButton>
+            <NavTabButton
+              icon={FaRegUserCircle}
+              tag={Link}
+              to="/profile/1"
+              isActive={activeTab === "Profile"}
+              onClick={() => handleTabClick("Profile")}
+            >
+              Profile
+            </NavTabButton>
+          </NavItem>
+        </Nav>
+
         <Collapse isOpen={isSidebarOpen} navbar>
           {/* extra menu items for the collapse here */}
         </Collapse>
