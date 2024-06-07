@@ -88,3 +88,7 @@ hr {
   color: var(--btn-color);
   background-color: var(--btn-bg-darker);
 }
+
+.ad-sidebar {
+  background-color: red;
+}

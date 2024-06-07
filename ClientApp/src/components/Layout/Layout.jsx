@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import NavMenu from "../NavMenu/NavMenu";
 import { Container, Row, Col } from "reactstrap";
-import Sidebar from "../Sidebar/Sidebar";
+import MainSidebar from "../Sidebar/MainSidebar";
 import useWindowSize from "../../hooks/UseScreenSize";
 import "./Layout.css";
+import AdSidebar from "../Sidebar/AdSidebar/AdSidebar";
 
 export const Layout = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -20,17 +21,14 @@ export const Layout = ({ children }) => {
   return (
     <Container fluid className="container-clean">
       <NavMenu toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-      <Row>
-        <Col
-          xs="12"
-          md="2"
-          className={`sidebar-container ${isSidebarOpen ? "open" : ""}`}
-        >
-          <Sidebar />
-        </Col>
+      <Row className="layout-row">
+        <MainSidebar isSidebarOpen={isSidebarOpen} />
+
         <Col xs="12" md={isSidebarOpen ? "12" : "9"}>
           {!isSidebarOpen && children}
         </Col>
+
+        <AdSidebar />
       </Row>
     </Container>
   );

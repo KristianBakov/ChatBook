@@ -3,7 +3,7 @@ import Feed from "../../components/Feed/Feed";
 
 const Home = () => {
   return (
-    <div className="row">
+    <div className="row home-wrapper">
       <Feed />
     </div>
   );
