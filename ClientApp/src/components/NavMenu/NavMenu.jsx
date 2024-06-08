@@ -23,10 +23,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
 
   return (
     <header>
-      <Navbar
-        className="navbar-expand-md navbar-toggleable-md border-bottom box-shadow mb-3"
-        light
-      >
+      <Navbar className="navbar-expand-md navbar-toggleable-md border-bottom box-shadow mb-3">
         <NavbarBrand tag={Link} to="/">
           ChatBook
           <ThemeToggleDev />
@@ -34,8 +31,8 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
 
         <NavbarToggler onClick={toggleSidebar} className="mx-2" />
 
-        <Nav className="tabs-container d-none d-md-flex">
-          <NavItem>
+        <Nav className="tabs-container d-none d-md-block">
+          <NavItem className="nav-item-main">
             <NavTabButton
               icon={MdHome}
               tag={Link}
@@ -75,9 +72,9 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           </NavItem>
         </Nav>
 
-        <Collapse isOpen={isSidebarOpen} navbar>
-          {/* extra menu items for the collapse here */}
-        </Collapse>
+        {/* <Collapse isOpen={isSidebarOpen} navbar>
+
+        </Collapse> */}
       </Navbar>
     </header>
   );
