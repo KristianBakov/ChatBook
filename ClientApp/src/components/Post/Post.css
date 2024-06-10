@@ -96,3 +96,40 @@
   width: 100%;
   margin: 0 auto;
 }
+
+/* post comment section */
+.post-comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.post-comment-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.post-comment-view-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: transparent !important;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.post-comment-view-btn:hover,
+.post-comment-view-btn:focus,
+.post-comment-view-btn:active {
+  text-decoration: underline;
+  color: var(--text-color) !important;
+}

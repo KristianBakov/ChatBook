@@ -72,6 +72,15 @@ hr {
   border-radius: 16px;
 }
 
+.card-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
 .btn {
   border: none;
   background-color: var(--btn-bg-dark);

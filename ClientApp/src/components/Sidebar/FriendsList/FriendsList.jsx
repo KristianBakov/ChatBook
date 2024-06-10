@@ -21,8 +21,10 @@ const FriendsList = () => {
     "Peggy",
   ];
 
+  //TODO: Replace the ImageTextButton with UserTextButton
+
   return (
-    <Container className="py-4 px-0">
+    <Container className="p-2 m-0">
       <Col className="friends-list-container">
         <h5>Contacts</h5>
         <div className="friends-list-scroll">

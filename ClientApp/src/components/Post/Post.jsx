@@ -6,6 +6,10 @@ import {
   CardSubtitle,
   CardLink,
   Container,
+  Input,
+  FormGroup,
+  Label,
+  Button,
 } from "reactstrap";
 import HrContainer from "../Containers/HrContainer";
 import IconTextButton from "../Buttons/TextButton/IconTextButton";
@@ -15,14 +19,16 @@ import { FaRegComment, FaBookmark } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
 import PhotoCollage from "../PhotoCollage/PhotoCollage";
 import "./Post.css";
+import UserTextButton from "../Buttons/UserTextButton/UserTextButton";
 
+//TODO: Replace post-user-container with UserTextButton or alternative
 const Post = ({
   title,
   time = "just now",
   message,
   likeNum,
   commentNum,
-  photos, // New prop for photos array
+  photos,
 }) => {
   return (
     <Card className="mb-3">
@@ -77,6 +83,59 @@ const Post = ({
             Share
           </IconTextButton>
         </HrContainer>
+
+        {commentNum > 0 && (
+          <Container className="post-comments-container">
+            <Container className="post-comment-header">
+              <Button tag={CardLink} className="post-comment-view-btn">
+                View all {commentNum} comments
+              </Button>
+            </Container>
+
+            <Container className="post-comment">
+              <UserTextButton
+                user={{
+                  name: title,
+                  profileIcon: "https://loremflickr.com/42/42",
+                }}
+
+                // onClick={() => {   open the modal here  }}
+              />
+              <CardText className="post-comment-text">
+                Comment text goes here
+              </CardText>
+
+              <Container className="post-comment-actions">
+                <Button tag={CardLink} className="post-comment-time">
+                  1d
+                </Button>
+                <IconTextButton icon={AiOutlineLike} className="post-action">
+                  Like
+                </IconTextButton>
+                <IconTextButton icon={FaRegComment} className="post-action">
+                  Reply
+                </IconTextButton>
+              </Container>
+            </Container>
+
+            <Container className="post-self-comment-container">
+              <img
+                className="post-self-comment-image"
+                src="https://loremflickr.com/42/42"
+                alt="User"
+              />
+
+              <FormGroup>
+                <Input
+                  id="user-comment-input"
+                  name="comment"
+                  placeholder="Write a comment..."
+                  type="text"
+                />
+              </FormGroup>
+            </Container>
+          </Container>
+        )}
       </CardBody>
     </Card>
   );
