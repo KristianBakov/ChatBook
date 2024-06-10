@@ -93,28 +93,36 @@ const Post = ({
             </Container>
 
             <Container className="post-comment">
-              <UserTextButton
-                user={{
-                  name: title,
-                  profileIcon: "https://loremflickr.com/42/42",
-                }}
+              <Container className="post-comment-user">
+                <img
+                  className="user-comment-image"
+                  src="https://loremflickr.com/42/42"
+                  alt="User"
+                />
 
-                // onClick={() => {   open the modal here  }}
-              />
-              <CardText className="post-comment-text">
-                Comment text goes here
-              </CardText>
+                <Container className="post-right-container">
+                  <Container className="post-comment-text-container">
+                    <Button tag={CardLink} className="post-comment-user-btn">
+                      {title}
+                    </Button>
+                    <CardText className="post-comment-text">
+                      OMG!! I love this post so much! I can't believe you did
+                      that :3
+                    </CardText>
+                  </Container>
 
-              <Container className="post-comment-actions">
-                <Button tag={CardLink} className="post-comment-time">
-                  1d
-                </Button>
-                <IconTextButton icon={AiOutlineLike} className="post-action">
-                  Like
-                </IconTextButton>
-                <IconTextButton icon={FaRegComment} className="post-action">
-                  Reply
-                </IconTextButton>
+                  <Container className="post-comment-actions">
+                    <Button tag={CardLink} className="post-comment-time">
+                      1d
+                    </Button>
+                    <Button tag={CardLink} className="post-action">
+                      Like
+                    </Button>
+                    <Button tag={CardLink} className="post-action">
+                      Reply
+                    </Button>
+                  </Container>
+                </Container>
               </Container>
             </Container>
 
@@ -125,8 +133,9 @@ const Post = ({
                 alt="User"
               />
 
-              <FormGroup>
+              <FormGroup className="comment-input-wrapper">
                 <Input
+                  className="comment-input"
                   id="user-comment-input"
                   name="comment"
                   placeholder="Write a comment..."

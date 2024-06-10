@@ -23,7 +23,7 @@ const Feed = () => {
   ];
 
   const photos = [
-    { source: "https://loremflickr.com/640/480?lock=1" },
+    { source: "https://loremflickr.com/640/480?lock=11" },
     { source: "https://loremflickr.com/640/480?lock=2" },
     { source: "https://loremflickr.com/640/480?lock=3" },
     { source: "https://loremflickr.com/640/480?lock=4" },
