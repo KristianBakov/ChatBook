@@ -6,7 +6,7 @@ import "./FriendsList.css";
 
 const FriendsList = () => {
   const friends = [
-    "Alice",
+    "Aziz",
     "Bob",
     "Charlie",
     "Dave",

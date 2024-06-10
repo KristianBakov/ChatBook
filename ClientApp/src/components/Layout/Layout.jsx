@@ -21,6 +21,9 @@ export const Layout = ({ children }) => {
   return (
     <Container fluid className="container-clean">
       <NavMenu toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
+
+      {children}
+      {/* 
       <Row className="layout-row">
         <MainSidebar
           md="3"
@@ -37,7 +40,7 @@ export const Layout = ({ children }) => {
           isSidebarOpen={isSidebarOpen}
           className="d-none d-md-block"
         />
-      </Row>
+      </Row> */}
     </Container>
   );
 };

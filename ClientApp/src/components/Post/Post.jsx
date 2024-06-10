@@ -8,7 +8,6 @@ import {
   Container,
   Input,
   FormGroup,
-  Label,
   Button,
 } from "reactstrap";
 import HrContainer from "../Containers/HrContainer";
@@ -19,7 +18,6 @@ import { FaRegComment, FaBookmark } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
 import PhotoCollage from "../PhotoCollage/PhotoCollage";
 import "./Post.css";
-import UserTextButton from "../Buttons/UserTextButton/UserTextButton";
 
 //TODO: Replace post-user-container with UserTextButton or alternative
 const Post = ({

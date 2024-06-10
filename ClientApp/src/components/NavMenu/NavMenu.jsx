@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  NavItem,
-  Nav,
-} from "reactstrap";
+import { Navbar, NavbarBrand, NavItem, Nav } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
 import ThemeToggleDev from "../ThemeToggle/ThemeToggleDev";
@@ -14,7 +7,7 @@ import { MdHome } from "react-icons/md";
 import { FaUserFriends, FaCompass, FaRegUserCircle } from "react-icons/fa";
 import NavTabButton from "./NavTabButton/NavTabButton";
 
-const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
+const NavMenu = () => {
   const [activeTab, setActiveTab] = useState("Home");
 
   const handleTabClick = (tab) => {
@@ -29,9 +22,7 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
           <ThemeToggleDev />
         </NavbarBrand>
 
-        <NavbarToggler onClick={toggleSidebar} className="mx-2" />
-
-        <Nav className="tabs-container d-none d-md-block">
+        <Nav className="tabs-container" navbar>
           <NavItem className="nav-item-main">
             <NavTabButton
               icon={MdHome}
@@ -71,10 +62,6 @@ const NavMenu = ({ toggleSidebar, isSidebarOpen }) => {
             </NavTabButton>
           </NavItem>
         </Nav>
-
-        {/* <Collapse isOpen={isSidebarOpen} navbar>
-
-        </Collapse> */}
       </Navbar>
     </header>
   );
