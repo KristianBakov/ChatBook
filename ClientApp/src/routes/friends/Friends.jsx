@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FriendsSidebar from "../../components/Sidebar/RouteSidebars/Friends/FriendsSidebar";
+import { Col, Row } from "reactstrap";
 
 const Friends = () => {
   const [activeMenu, setActiveMenu] = useState("home");
@@ -22,10 +23,12 @@ const Friends = () => {
   };
 
   return (
-    <>
+    <Row>
       <FriendsSidebar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
-      <div className="content">{renderContent()}</div>
-    </>
+      <Col sm="10" className="content">
+        {renderContent()}
+      </Col>
+    </Row>
   );
 };
 
