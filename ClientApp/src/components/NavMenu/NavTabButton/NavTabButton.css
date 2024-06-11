@@ -45,6 +45,18 @@
   margin-left: 5px;
 }
 
+@media (max-width: 768px) {
+  .tab-icon {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .tab-icon {
+    font-size: 1.3rem !important;
+  }
+}
+
 .tab-icon {
   font-size: 1.65rem;
 }

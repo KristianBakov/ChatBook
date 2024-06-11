@@ -7,10 +7,20 @@
   border-bottom-color: var(--navbar-line-color) !important;
   height: var(--header-height);
   padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 .navbar > .container-fluid {
   height: 100%;
+  align-items: center;
 }
 
 .tabs-container {
@@ -19,6 +29,19 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* medium breakpoint for tabs container */
+@media (max-width: 768px) {
+  .tabs-container {
+    position: relative !important;
+    height: 100%;
+    width: 100%;
+    transform: none;
+    left: auto;
+    top: auto;
+    justify-self: center !important;
+  }
 }
 
 .nav-item-main {
