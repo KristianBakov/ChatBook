@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar, NavbarBrand, NavItem, Nav } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
@@ -14,6 +14,11 @@ const NavMenu = () => {
     setActiveTab(tab);
   };
 
+  useEffect(() => {
+    const path = window.location.pathname;
+    setActiveTab(path === "/" ? "home" : path.split("/")[1]);
+  }, []);
+
   return (
     <header>
       <Navbar className="navbar-expand-md navbar-toggleable-md border-bottom box-shadow mb-3">
@@ -28,8 +33,8 @@ const NavMenu = () => {
               icon={MdHome}
               tag={Link}
               to="/"
-              isActive={activeTab === "Home"}
-              onClick={() => handleTabClick("Home")}
+              isActive={activeTab === "home"}
+              onClick={() => handleTabClick("home")}
             >
               Home
             </NavTabButton>
@@ -37,8 +42,8 @@ const NavMenu = () => {
               icon={FaUserFriends}
               tag={Link}
               to="/friends"
-              isActive={activeTab === "Friends"}
-              onClick={() => handleTabClick("Friends")}
+              isActive={activeTab === "friends"}
+              onClick={() => handleTabClick("friends")}
             >
               Friends
             </NavTabButton>
@@ -46,8 +51,8 @@ const NavMenu = () => {
               icon={FaCompass}
               tag={Link}
               to="/discover"
-              isActive={activeTab === "Discover"}
-              onClick={() => handleTabClick("Discover")}
+              isActive={activeTab === "discover"}
+              onClick={() => handleTabClick("discover")}
             >
               Discover
             </NavTabButton>
@@ -55,8 +60,8 @@ const NavMenu = () => {
               icon={FaRegUserCircle}
               tag={Link}
               to="/profile/1"
-              isActive={activeTab === "Profile"}
-              onClick={() => handleTabClick("Profile")}
+              isActive={activeTab === "profile"}
+              onClick={() => handleTabClick("profile")}
             >
               Profile
             </NavTabButton>

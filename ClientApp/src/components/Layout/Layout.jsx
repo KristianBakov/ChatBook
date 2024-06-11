@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import NavMenu from "../NavMenu/NavMenu";
-import { Container, Row, Col } from "reactstrap";
-import MainSidebar from "../Sidebar/MainSidebar";
+import { Container } from "reactstrap";
 import useWindowSize from "../../hooks/UseScreenSize";
 import "./Layout.css";
-import AdSidebar from "../Sidebar/AdSidebar/AdSidebar";
 
 export const Layout = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);

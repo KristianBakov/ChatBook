@@ -1,13 +1,8 @@
 import React from "react";
-import { Col } from "reactstrap";
+import Sidebar from "../Sidebar";
 
-const AdSidebar = ({ isSidebarOpen }) => {
-  return (
-    <Col
-      className={`sidebar-container ${isSidebarOpen ? "open" : ""}`}
-      style={{ backgroundColor: "lightblue" }}
-    ></Col>
-  );
+const AdSidebar = () => {
+  return <Sidebar style={{ backgroundColor: "lightblue" }}></Sidebar>;
 };
 
 export default AdSidebar;

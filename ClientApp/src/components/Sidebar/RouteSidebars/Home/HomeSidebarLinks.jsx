@@ -1,8 +1,8 @@
 import React from "react";
 import { Nav, NavItem } from "reactstrap";
-import IconTextButton from "../Buttons/TextButton/IconTextButton";
+import IconTextButton from "../../../Buttons/TextButton/IconTextButton";
 
-const SidebarLinks = () => {
+const HomeSidebarLinks = () => {
   return (
     <div className=" bg-transparent sidebar py-4">
       <Nav vertical>
@@ -33,4 +33,4 @@ const SidebarLinks = () => {
   );
 };
 
-export default SidebarLinks;
+export default HomeSidebarLinks;
