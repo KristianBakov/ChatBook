@@ -1,0 +1,49 @@
+.user-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  min-width: 200px;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-info > .btn {
+  font-weight: bold;
+  background-color: transparent !important;
+  margin-bottom: 8px;
+  text-align: left;
+  padding: 0;
+}
+
+.user-card-mutual-friends {
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+}
+
+.user-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.user-card-btn {
+  scale: 1;
+  transition: scale 0.3s ease;
+  width: 100%;
+}
+
+.user-card-btn:active {
+  scale: 0.95;
+}
+
+.user-accept-btn {
+  background-color: var(--brand-color) !important;
+  color: white !important;
+}

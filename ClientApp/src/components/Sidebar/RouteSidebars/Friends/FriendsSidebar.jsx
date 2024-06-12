@@ -7,9 +7,6 @@ const FriendsSidebar = ({ activeMenu, setActiveMenu }) => {
   const buttonClasses = (menu) => {
     return "friends-tab " + (activeMenu === menu ? "active" : "");
   };
-  const test = () => {
-    console.log("test");
-  };
 
   return (
     <Col sm="3" className="bg-transparent sidebar friends-sidebar py-4">
