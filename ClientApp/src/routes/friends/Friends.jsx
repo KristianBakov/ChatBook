@@ -25,7 +25,7 @@ const Friends = () => {
   return (
     <Row>
       <FriendsSidebar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
-      <Col sm="10" className="content">
+      <Col sm="9" className="content">
         {renderContent()}
       </Col>
     </Row>

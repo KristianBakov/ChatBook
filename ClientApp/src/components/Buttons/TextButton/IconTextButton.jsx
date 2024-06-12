@@ -4,12 +4,24 @@ import { Link as RouterLink } from "react-router-dom";
 import classNames from "classnames";
 import "./TextButton.css";
 
-const IconTextButton = ({ icon: Icon, children, isNavLink, to, className }) => {
+const IconTextButton = ({
+  icon: Icon,
+  children,
+  isNavLink,
+  to,
+  className,
+  onClick,
+}) => {
   const buttonClasses = classNames("btn btn-nav align-items-center", className);
 
   if (isNavLink && to) {
     return (
-      <Button tag={RouterLink} to={to} className={buttonClasses}>
+      <Button
+        tag={RouterLink}
+        to={to}
+        className={buttonClasses}
+        onClick={onClick}
+      >
         {Icon && <Icon className="nav-icon mr-2" />}
         {children}
       </Button>
@@ -17,7 +29,7 @@ const IconTextButton = ({ icon: Icon, children, isNavLink, to, className }) => {
   }
 
   return (
-    <Button className={buttonClasses}>
+    <Button className={buttonClasses} onClick={onClick}>
       {Icon && <Icon className="nav-icon mr-2" />}
       {children}
     </Button>

@@ -1,14 +1,22 @@
 import React from "react";
-import { Col, Nav, NavItem, Row } from "reactstrap";
+import { Col, Nav, NavItem } from "reactstrap";
 import IconTextButton from "../../../Buttons/TextButton/IconTextButton";
+import "./FriendsSidebar.css";
 
 const FriendsSidebar = ({ activeMenu, setActiveMenu }) => {
+  const buttonClasses = (menu) => {
+    return "friends-tab " + (activeMenu === menu ? "active" : "");
+  };
+  const test = () => {
+    console.log("test");
+  };
+
   return (
-    <Col sm="2" className="bg-transparent sidebar py-4">
+    <Col sm="3" className="bg-transparent sidebar friends-sidebar py-4">
       <Nav vertical>
         <NavItem>
           <IconTextButton
-            className={activeMenu === "home" ? "active" : ""}
+            className={buttonClasses("home")}
             onClick={() => setActiveMenu("home")}
           >
             Home
@@ -16,7 +24,7 @@ const FriendsSidebar = ({ activeMenu, setActiveMenu }) => {
         </NavItem>
         <NavItem>
           <IconTextButton
-            className={activeMenu === "friendRequests" ? "active" : ""}
+            className={buttonClasses("friendRequests")}
             onClick={() => setActiveMenu("friendRequests")}
           >
             Friend requests
@@ -24,7 +32,7 @@ const FriendsSidebar = ({ activeMenu, setActiveMenu }) => {
         </NavItem>
         <NavItem>
           <IconTextButton
-            className={activeMenu === "suggestions" ? "active" : ""}
+            className={buttonClasses("suggestions")}
             onClick={() => setActiveMenu("suggestions")}
           >
             Suggestions
@@ -32,7 +40,7 @@ const FriendsSidebar = ({ activeMenu, setActiveMenu }) => {
         </NavItem>
         <NavItem>
           <IconTextButton
-            className={activeMenu === "allFriends" ? "active" : ""}
+            className={buttonClasses("allFriends")}
             onClick={() => setActiveMenu("allFriends")}
           >
             All friends
@@ -40,7 +48,7 @@ const FriendsSidebar = ({ activeMenu, setActiveMenu }) => {
         </NavItem>
         <NavItem>
           <IconTextButton
-            className={activeMenu === "birthdays" ? "active" : ""}
+            className={buttonClasses("birthdays")}
             onClick={() => setActiveMenu("birthdays")}
           >
             Birthdays

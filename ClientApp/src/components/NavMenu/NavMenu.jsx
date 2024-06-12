@@ -21,7 +21,7 @@ const NavMenu = () => {
 
   return (
     <header>
-      <Navbar className="navbar-expand-md navbar-toggleable-md border-bottom box-shadow mb-3">
+      <Navbar className="navbar-expand-md navbar-toggleable-md border-bottom box-shadow">
         <NavbarBrand tag={Link} to="/">
           ChatBook
           <ThemeToggleDev />
