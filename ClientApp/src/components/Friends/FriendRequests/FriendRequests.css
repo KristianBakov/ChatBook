@@ -14,9 +14,10 @@
 .user-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
   flex-basis: 0px;
   flex-shrink: 1;
   flex-grow: 1;
+  margin: 0;
 }

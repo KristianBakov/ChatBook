@@ -40,15 +40,16 @@ const FriendRequests = () => {
   return (
     <div className="friends-page-content py-2">
       <div className="friend-requests">
-        {/*If no requests shows this */}
-        <h2>Friend Requests</h2>
-        <p>No new requests</p>
-      </div>
-      {/*If there is requests shows this */}
-      <div className="user-grid row">
-        {friendRequests.map((user, index) => (
-          <FriendRequestCard key={index} user={user} />
-        ))}
+        <h2 className="friends-page-title">Friend Requests</h2>
+        {friendRequests.length === 0 ? (
+          <p>No new requests</p>
+        ) : (
+          <div className="user-grid row">
+            {friendRequests.map((user, index) => (
+              <FriendRequestCard key={index} user={user} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

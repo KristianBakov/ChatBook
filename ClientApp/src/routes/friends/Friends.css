@@ -47,3 +47,10 @@
     max-width: 100vw;
   }
 }
+
+.friends-page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding: 0;
+}
