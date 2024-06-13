@@ -1,3 +1,4 @@
+import { Container } from "reactstrap";
 import FriendRequestCard from "../FriendRequestCard/FriendRequestCard";
 import "./FriendRequests.css";
 
@@ -37,14 +38,14 @@ const friendRequests = [
 
 const FriendRequests = () => {
   return (
-    <div>
+    <div className="friends-page-content py-2">
       <div className="friend-requests">
         {/*If no requests shows this */}
         <h2>Friend Requests</h2>
         <p>No new requests</p>
       </div>
       {/*If there is requests shows this */}
-      <div className="user-grid">
+      <div className="user-grid row">
         {friendRequests.map((user, index) => (
           <FriendRequestCard key={index} user={user} />
         ))}

@@ -1,0 +1,22 @@
+.friends-page-content {
+  display: flex;
+  max-width: 100%;
+  min-width: 0;
+  flex-shrink: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  z-index: 0;
+  position: relative;
+  flex-basis: 0px;
+  min-height: inherit;
+}
+
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  flex-basis: 0px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}

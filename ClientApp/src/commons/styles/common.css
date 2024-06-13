@@ -22,6 +22,7 @@
   --brand-color: #007bff;
   --brand-color-darker: #0056b3;
   --header-height: 56px;
+  --sidebar-min-width: 240px;
 }
 
 [data-theme="dark"] {
@@ -102,4 +103,21 @@ hr {
 
 .ad-sidebar {
   background-color: red;
+}
+
+.wrapping-container {
+  display: flex;
+  height: 100%;
+}
+
+.layout-box {
+  padding-top: var(--header-height);
+}
+
+.fixed-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }

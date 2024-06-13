@@ -1,7 +1,8 @@
 import { useState } from "react";
 import FriendsSidebar from "../../components/Sidebar/RouteSidebars/Friends/FriendsSidebar";
-import { Col, Row } from "reactstrap";
+import { Col, Container } from "reactstrap";
 import FriendRequests from "../../components/Friends/FriendRequests/FriendRequests";
+import "./Friends.css";
 
 const Friends = () => {
   const [activeMenu, setActiveMenu] = useState("home");
@@ -23,10 +24,16 @@ const Friends = () => {
   };
 
   return (
-    <Row>
-      <FriendsSidebar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
-      <Col sm="9">{renderContent()}</Col>
-    </Row>
+    <Container fluid className="row friends-page">
+      <Container className="friends-sidebar-wrapper">
+        <FriendsSidebar
+          className="fixed-sidebar"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+        />
+      </Container>
+      {renderContent()}
+    </Container>
   );
 };
 

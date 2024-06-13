@@ -6,7 +6,7 @@ import AdSidebar from "../../components/Sidebar/AdSidebar/AdSidebar";
 
 const Home = () => {
   return (
-    <div className="row home-wrapper mt-3">
+    <div className="row home-wrapper m-3">
       <HomeSidebar md="3" className="d-none d-md-block" />
 
       <Col xs="12" md="6">

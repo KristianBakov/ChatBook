@@ -1,12 +1,4 @@
-import {
-  Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardLink,
-  CardSubtitle,
-  CardTitle,
-} from "reactstrap";
+import { Button, ButtonGroup, Card, CardBody, CardLink } from "reactstrap";
 
 import "./FriendRequestCard.css";
 
@@ -22,9 +14,9 @@ const FriendRequestCard = ({ user }) => {
         </Button>
 
         {user.mutualFriends && (
-          <CardSubtitle className="user-card-mutual-friends mb-2">
+          <Button tag={CardLink} className="user-card-mutual-friends mb-2">
             {user.mutualFriends} mutual friends
-          </CardSubtitle>
+          </Button>
         )}
 
         <ButtonGroup vertical className="user-actions">

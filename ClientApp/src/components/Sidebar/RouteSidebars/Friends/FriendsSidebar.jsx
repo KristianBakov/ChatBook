@@ -9,7 +9,7 @@ const FriendsSidebar = ({ activeMenu, setActiveMenu }) => {
   };
 
   return (
-    <Col sm="3" className="bg-transparent sidebar friends-sidebar py-4">
+    <Col className="bg-transparent sidebar friends-sidebar py-4">
       <Nav vertical>
         <NavItem>
           <IconTextButton

@@ -5,6 +5,9 @@
   align-items: center;
   max-width: 250px;
   min-width: 200px;
+  flex-shrink: 1;
+  /* flex-basis: 0px; */
+  flex-grow: 1;
 }
 
 .user-info {
@@ -17,14 +20,15 @@
 .user-info > .btn {
   font-weight: bold;
   background-color: transparent !important;
-  margin-bottom: 8px;
+  margin: 0;
   text-align: left;
   padding: 0;
 }
 
 .user-card-mutual-friends {
+  font-weight: normal !important;
   font-size: 0.8rem;
-  color: var(--text-color-light);
+  color: var(--text-color-light) !important;
 }
 
 .user-card img {

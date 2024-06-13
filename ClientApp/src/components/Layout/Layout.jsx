@@ -20,7 +20,7 @@ export const Layout = ({ children }) => {
     <Container fluid className="container-clean">
       <NavMenu toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
 
-      {children}
+      <div className="layout-box">{children}</div>
       {/* 
       <Row className="layout-row">
         <MainSidebar
