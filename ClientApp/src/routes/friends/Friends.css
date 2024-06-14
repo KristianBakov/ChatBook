@@ -36,6 +36,25 @@
   margin-left: 24px;
 }
 
+.friend-requests {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+@media (max-width: 960px) {
+  .user-grid {
+    justify-content: center;
+  }
+
+  .friend-requests {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .friends-sidebar-wrapper {
     display: none;

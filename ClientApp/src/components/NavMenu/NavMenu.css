@@ -42,6 +42,9 @@
     top: auto;
     justify-self: center !important;
   }
+  .layout-box {
+    padding-top: var(--header-double-height) !important;
+  }
 }
 
 .nav-item-main {

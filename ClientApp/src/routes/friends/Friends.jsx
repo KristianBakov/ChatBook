@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FriendsSidebar from "../../components/Sidebar/RouteSidebars/Friends/FriendsSidebar";
-import { Col, Container } from "reactstrap";
+import { Container } from "reactstrap";
 import FriendRequests from "../../components/Friends/FriendRequests/FriendRequests";
 import "./Friends.css";
 
