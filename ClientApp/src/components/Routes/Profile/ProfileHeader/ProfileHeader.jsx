@@ -6,22 +6,27 @@ import "./ProfileHeader.css";
 
 const ProfileHeader = ({ user }) => {
   return (
-    <Container className="profile-header">
-      <Row className="profile-upper-header-details">
-        <Row className="profile-upper-left-header-details">
-          <div className="profile-header-image">
-            <img
-              src="https://loremflickr.com/1920/1080?lock=14"
-              alt="profile"
-            />
+    <div className="profile-header">
+      <Row className="profile-upper-header-details container-clean">
+        <Row className="profile-upper-left-header-details container-clean">
+          <div className="aspect-ratio-box">
+            <div className="profile-header-image">
+              <img
+                src="https://loremflickr.com/1920/1080?lock=14"
+                alt="profile"
+              />
+            </div>
           </div>
 
           <Container className="profile-header-details">
-            <Col className="profile-header-name-friends">
-              <h3>{user.username}</h3>
-              <p>{user.friends.length} Friends</p>
-              <ProfileUserFriendIconRow friendsList={user.friends} />
-            </Col>
+            <Row className="profile-header-row">
+              <img src={user.profilePicture} alt="profile" />
+              <Col className="profile-header-name-friends">
+                <h3>{user.username}</h3>
+                <p>{user.friends.length} Friends</p>
+                <ProfileUserFriendIconRow friendsList={user.friends} />
+              </Col>
+            </Row>
           </Container>
         </Row>
 
@@ -40,7 +45,7 @@ const ProfileHeader = ({ user }) => {
           </ButtonTabGroup>
         }
       </Row>
-    </Container>
+    </div>
   );
 };
 

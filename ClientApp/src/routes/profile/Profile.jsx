@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import ProfileHeader from "../../components/Routes/Profile/ProfileHeader/ProfileHeader";
+import "./Profile.css";
 
 const user = {
   id: 1,
@@ -24,7 +25,7 @@ const user = {
 
 const Profile = () => {
   return (
-    <Container fluid className="profile-page">
+    <Container fluid className="profile-page container-clean">
       <ProfileHeader user={user} />
 
       <Container className="profile-content"></Container>
