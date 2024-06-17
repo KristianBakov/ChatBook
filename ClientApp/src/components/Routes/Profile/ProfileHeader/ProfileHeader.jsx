@@ -2,28 +2,9 @@ import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import ButtonTabGroup from "../../../ButtonGroups/ButtonTabGroup/ButtonTabGroup";
 import ProfileUserFriendIconRow from "./ProfileUserFriendIconRow/ProfileUserFriendIconRow";
+import "./ProfileHeader.css";
 
-const user = {
-  id: 1,
-  username: "Testonito",
-  profilePicture: "https://loremflickr.com/42/42?lock=21",
-  friends: [
-    {
-      id: 2,
-      profilePicture: "https://loremflickr.com/42/42?lock=20",
-    },
-    {
-      id: 3,
-      profilePicture: "https://loremflickr.com/42/42?lock=24",
-    },
-    {
-      id: 4,
-      profilePicture: "https://loremflickr.com/42/42?lock=22",
-    },
-  ],
-};
-
-const ProfileHeader = (/* pass user here */) => {
+const ProfileHeader = ({ user }) => {
   return (
     <Container className="profile-header">
       <Row className="profile-upper-header-details">
@@ -37,8 +18,8 @@ const ProfileHeader = (/* pass user here */) => {
 
           <Container className="profile-header-details">
             <Col className="profile-header-name-friends">
-              <h3>Username</h3>
-              <p>Friends: 0</p>
+              <h3>{user.username}</h3>
+              <p>{user.friends.length} Friends</p>
               <ProfileUserFriendIconRow friendsList={user.friends} />
             </Col>
           </Container>

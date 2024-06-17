@@ -27,6 +27,7 @@
 }
 
 .user-card-mutual-friends {
+  height: 20px;
   font-weight: normal !important;
   font-size: 0.8rem;
   color: var(--text-color-light) !important;

@@ -15,7 +15,7 @@ const AppRoutes = [
     element: <Friends />,
   },
   {
-    path: "/profile/",
+    path: "/profile/:id",
     element: <Profile />,
   },
   {

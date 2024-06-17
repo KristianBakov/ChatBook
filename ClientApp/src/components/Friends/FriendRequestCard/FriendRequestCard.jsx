@@ -13,7 +13,9 @@ const FriendRequestCard = ({ user }) => {
           {user.name}
         </Button>
 
-        {user.mutualFriends && (
+        {user.mutualFriends ? (
+          <div className="user-card-mutual-friends mb-2"></div>
+        ) : (
           <Button tag={CardLink} className="user-card-mutual-friends mb-2">
             {user.mutualFriends} mutual friends
           </Button>
