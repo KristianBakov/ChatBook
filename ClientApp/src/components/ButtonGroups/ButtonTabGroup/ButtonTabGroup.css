@@ -1,0 +1,20 @@
+.button-tab-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.button-tab-group-button {
+  background-color: transparent;
+  border-radius: 12px;
+  color: #495057;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.button-tab-group-button:hover {
+  background-color: #f8f9fa;
+}

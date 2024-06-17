@@ -2,6 +2,7 @@ import Home from "./routes/home/Home";
 import Counter from "./components/Counter";
 import FetchData from "./components/FetchData";
 import Friends from "./routes/friends/Friends";
+import Profile from "./routes/profile/Profile";
 
 const AppRoutes = [
   {
@@ -12,6 +13,10 @@ const AppRoutes = [
   {
     path: "/friends",
     element: <Friends />,
+  },
+  {
+    path: "/profile/",
+    element: <Profile />,
   },
   {
     path: "/counter",
