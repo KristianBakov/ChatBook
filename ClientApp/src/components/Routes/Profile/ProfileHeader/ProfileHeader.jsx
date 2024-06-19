@@ -9,13 +9,11 @@ const ProfileHeader = ({ user }) => {
     <div className="profile-header">
       <Row className="profile-upper-header-details container-clean">
         <Row className="profile-upper-left-header-details container-clean">
-          <div className="aspect-ratio-box">
-            <div className="profile-header-image">
-              <img
-                src="https://loremflickr.com/1920/1080?lock=14"
-                alt="profile"
-              />
-            </div>
+          <div className="profile-header-image">
+            <img
+              src="https://loremflickr.com/1920/1080?lock=14"
+              alt="profile"
+            />
           </div>
 
           <Container className="profile-header-details">
