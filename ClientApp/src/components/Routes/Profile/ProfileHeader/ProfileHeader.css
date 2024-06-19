@@ -1,6 +1,7 @@
 .profile-header {
   display: flex;
   flex-direction: column;
+  background-color: var(--post-bg-color);
 }
 
 .profile-upper-header-details {
@@ -9,6 +10,7 @@
 }
 
 .profile-upper-left-header-details {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -46,7 +48,28 @@
   }
 }
 
-.profile-header-row img {
-  height: 120px;
-  width: 120px;
+.profile-header-details {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: -32px;
+  z-index: 2;
+}
+
+.profile-header-row > img {
+  height: 168px;
+  width: 168px;
+  border-radius: 50%;
+  padding: 0;
+  border: 4px solid var(--bg-color);
+}
+
+.profile-header-name-friends {
+  margin-top: 42px;
+}
+
+.friends-num-text {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 4px;
+  color: var(--text-color-light);
 }

@@ -16,7 +16,7 @@
 .profile-user-friend-icon-row-icon img {
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--bg-color);
+  border: 3px solid var(--bg-color);
   width: 42px !important;
   height: 42px !important;
 }

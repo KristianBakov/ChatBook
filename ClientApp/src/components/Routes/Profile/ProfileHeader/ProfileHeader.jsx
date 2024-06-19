@@ -8,7 +8,7 @@ const ProfileHeader = ({ user }) => {
   return (
     <div className="profile-header">
       <Row className="profile-upper-header-details container-clean">
-        <Row className="profile-upper-left-header-details container-clean">
+        <Col className="profile-upper-left-header-details container-clean">
           <div className="profile-header-image">
             <img
               src="https://loremflickr.com/1920/1080?lock=14"
@@ -21,12 +21,12 @@ const ProfileHeader = ({ user }) => {
               <img src={user.profilePicture} alt="profile" />
               <Col className="profile-header-name-friends">
                 <h3>{user.username}</h3>
-                <p>{user.friends.length} Friends</p>
+                <p className="friends-num-text">{user.friends.length} Friends</p>
                 <ProfileUserFriendIconRow friendsList={user.friends} />
               </Col>
             </Row>
           </Container>
-        </Row>
+        </Col>
 
         <Row className="profile-upper-right-header-details">
           <Button className="profile-edit-button">Edit Profile</Button>
