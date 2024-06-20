@@ -1,3 +1,8 @@
+:root {
+  --header-padding: 16px;
+  --header-max-width: 1024px;
+}
+
 .profile-header {
   display: flex;
   flex-direction: column;
@@ -7,6 +12,15 @@
 .profile-upper-header-details {
   display: flex;
   flex-direction: column;
+}
+
+.profile-header-user-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 var(--header-padding);
 }
 
 .profile-upper-left-header-details {
@@ -48,8 +62,8 @@
   }
 }
 
-.profile-header-details {
-  max-width: 1024px;
+.profile-header-user-details {
+  max-width: var(--header-max-width);
   margin: 0 auto;
   margin-top: -32px;
   z-index: 2;
@@ -72,4 +86,32 @@
   margin: 0;
   margin-bottom: 4px;
   color: var(--text-color-light);
+}
+
+.profile-edit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btn-bg-dark) !important;
+  color: var(--btn-color) !important;
+}
+
+.profile-edit-button:hover {
+  background-color: var(--btn-bg-darker) !important;
+}
+
+.profile-edit-button:active {
+  transform: scale(0.95);
+}
+
+.profile-lower-header-details {
+  padding: 0 var(--header-padding);
+  max-width: var(--header-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile-lower-header-details > hr {
+  margin: 24px 0;
+  width: 100%;
 }

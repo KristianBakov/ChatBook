@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Button, ButtonGroup } from "reactstrap";
+import { Button } from "reactstrap";
 import "./ButtonTabGroup.css";
 
 const ButtonTabGroup = ({ children }) => {
   const [activeTab, setActiveTab] = useState(children[0]);
 
   return (
-    <ButtonGroup className="button-tab-group">
+    <div className="button-tab-group">
       {children.map((tab, index) => (
         <Button
-          className="button-tab-group-button"
+          className="button-tab-group-button btn-tab"
           key={index}
           onClick={() => setActiveTab(tab)}
           active={activeTab === tab}
@@ -17,7 +17,7 @@ const ButtonTabGroup = ({ children }) => {
           {tab}
         </Button>
       ))}
-    </ButtonGroup>
+    </div>
   );
 };
 

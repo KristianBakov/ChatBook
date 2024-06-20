@@ -27,14 +27,16 @@
   color: var(--btn-color) !important;
 }
 
-.btn-tab.selected {
+.btn-tab.selected,
+.btn-tab.active {
   height: var(--header-height);
   border-radius: 0;
   border-bottom: 4px solid var(--brand-color);
   color: var(--brand-color);
 }
 
-.btn-tab.selected:hover {
+.btn-tab.selected:hover,
+.btn-tab.active:hover {
   border-radius: 0;
   border-bottom: 4px solid var(--brand-color);
   background-color: transparent !important;
