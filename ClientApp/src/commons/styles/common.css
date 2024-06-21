@@ -61,7 +61,7 @@ hr {
 
 .container-clean {
   padding: 0 !important;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .card {

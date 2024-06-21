@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import ProfileHeader from "../../components/Routes/Profile/ProfileHeader/ProfileHeader";
+import ProfileContent from "../../components/Routes/Profile/ProfileContent/ProfileContent";
 import "./Profile.css";
 
 const user = {
@@ -28,7 +29,7 @@ const Profile = () => {
     <Container fluid className="profile-page container-clean">
       <ProfileHeader user={user} />
 
-      <Container className="profile-content"></Container>
+      <ProfileContent />
     </Container>
   );
 };
