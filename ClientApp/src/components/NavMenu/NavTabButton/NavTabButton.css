@@ -9,6 +9,7 @@
   text-align: center;
   background-color: transparent !important;
   color: var(--btn-color);
+  height: 100%;
 }
 
 @media (max-width: 1200px) {

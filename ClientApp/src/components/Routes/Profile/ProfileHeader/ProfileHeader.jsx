@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import ButtonTabGroup from "../../../ButtonGroups/ButtonTabGroup/ButtonTabGroup";
 import ProfileUserFriendIconRow from "./ProfileUserFriendIconRow/ProfileUserFriendIconRow";
 import IconTextButton from "../../../Buttons/TextButton/IconTextButton";
