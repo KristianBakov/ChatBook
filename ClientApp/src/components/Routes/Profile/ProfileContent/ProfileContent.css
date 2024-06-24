@@ -20,7 +20,7 @@
 }
 
 .profile-content-right {
-  flex: 3;
+  flex: 2;
   padding: 1.4em;
   background-color: var(--post-bg-color);
   border-radius: 8px;
@@ -44,7 +44,5 @@
   top: 80px; /* required to simulate padding */
   background-color: transparent;
   border-radius: 8px;
-  /* padding: 1.4em; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   color: var(--text-color);
 }

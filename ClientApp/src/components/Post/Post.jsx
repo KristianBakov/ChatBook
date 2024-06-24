@@ -16,7 +16,7 @@ import IconCircleButton from "../Buttons/IconCircleButton/IconCircleButton";
 import { AiOutlineLike } from "react-icons/ai";
 import { FaRegComment, FaBookmark } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
-import PhotoCollage from "../PhotoCollage/PhotoCollage";
+import PhotoCollage from "../PhotoLayouts/PhotoCollage/PhotoCollage";
 import "./Post.css";
 
 //TODO: Replace post-user-container with UserTextButton or alternative
