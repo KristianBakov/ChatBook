@@ -1,12 +1,12 @@
 .profile-content-wrapper {
   display: flex;
   flex-direction: row;
-  max-width: 1024px;
+  max-width: var(--header-max-width);
   margin: 0 auto;
   position: relative;
   background-color: transparent;
   padding: 12px;
-  gap: 12px;
+  gap: 1.2em;
 }
 
 @media (max-width: 768px) {
@@ -17,13 +17,12 @@
 
 .profile-column {
   /* flex: 1 1 50%; */
-  padding: 1.4em;
-  background-color: var(--post-bg-color);
   border-radius: 8px;
 }
 
 .profile-content-right {
   flex: 3;
+  padding: 1.4em;
   background-color: var(--post-bg-color);
   border-radius: 8px;
   overflow: hidden;
@@ -44,9 +43,11 @@
   position: -webkit-sticky;
   position: sticky;
   top: 80px; /* required to simulate padding */
-  background-color: white;
+  background-color: var(--post-bg-color);
+  border-radius: 8px;
+  padding: 1.4em;
 
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--post-bg-color);
   color: var(--text-color);
 }

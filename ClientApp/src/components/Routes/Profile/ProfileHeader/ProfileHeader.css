@@ -31,7 +31,7 @@
 }
 
 .profile-header-image {
-  max-width: 1024px;
+  max-width: var(--header-max-width);
   width: 100%;
   margin: 0 auto;
   height: 150px;
