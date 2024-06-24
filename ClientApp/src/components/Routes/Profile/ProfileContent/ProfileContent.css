@@ -16,7 +16,6 @@
 }
 
 .profile-column {
-  /* flex: 1 1 50%; */
   border-radius: 8px;
 }
 
@@ -43,11 +42,9 @@
   position: -webkit-sticky;
   position: sticky;
   top: 80px; /* required to simulate padding */
-  background-color: var(--post-bg-color);
+  background-color: transparent;
   border-radius: 8px;
-  padding: 1.4em;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: var(--post-bg-color);
+  /* padding: 1.4em; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   color: var(--text-color);
 }

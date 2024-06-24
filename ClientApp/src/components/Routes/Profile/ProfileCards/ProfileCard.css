@@ -1,8 +1,6 @@
 .profile-card {
   background-color: var(--post-bg-color);
   color: var(--text-color);
-  box-shadow: none !important;
-  padding: 0;
 }
 
 .profile-card .card-body {
