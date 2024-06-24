@@ -59,7 +59,7 @@ const PhotoCollage = ({
                 {photos.length > bottomRowPhotoCount &&
                   index === bottomRowPhotoCount - 2 && (
                     <div
-                      className="overlay"
+                      className="post-photo-overlay"
                       onClick={() => handleOpenModal(index + topRowPhotoCount)}
                     >
                       +{photos.length - bottomRowPhotoCount}

@@ -1,46 +1,14 @@
 import React from "react";
 import "./ProfileContent.css";
 import { Col, Container } from "reactstrap";
+import ProfileIntroCard from "../ProfileCards/ProfileIntroCard/ProfileIntroCard";
 
-const ProfileContent = () => {
+const ProfileContent = ({ user }) => {
   return (
     <Container fluid className="profile-content-wrapper">
       <Col className="profile-column profile-content-left">
         <div className="sticky">
-          <p>Testing</p>
-          <p>Testing</p>
-          <p>Testing2</p>
-          <img src="https://via.placeholder.com/150" alt="Sample"></img>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
-          <p>Testing2</p>
+          <ProfileIntroCard user={user} />
         </div>
       </Col>
       <Col className="profile-column profile-content-right">
