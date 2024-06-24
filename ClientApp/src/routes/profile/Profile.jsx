@@ -6,6 +6,25 @@ import "./Profile.css";
 
 const user = {
   id: 1,
+  profileInfo: {
+    bio: "This is a test bio",
+    education: "This is a test education",
+    homeTown: null,
+    featuredPhotos: [
+      {
+        id: 1,
+        photo: "https://loremflickr.com/42/42?lock=25",
+      },
+      {
+        id: 2,
+        photo: "https://loremflickr.com/42/42?lock=26",
+      },
+      {
+        id: 3,
+        photo: "https://loremflickr.com/42/42?lock=27",
+      },
+    ],
+  },
   username: "Testonito",
   profilePicture: "https://loremflickr.com/42/42?lock=21",
   friends: [
@@ -29,7 +48,7 @@ const Profile = () => {
     <Container fluid className="profile-page container-clean">
       <ProfileHeader user={user} />
 
-      <ProfileContent />
+      <ProfileContent user={user} />
     </Container>
   );
 };
