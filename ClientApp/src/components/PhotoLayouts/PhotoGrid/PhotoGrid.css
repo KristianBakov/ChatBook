@@ -6,18 +6,25 @@
   align-items: center;
   gap: 2px;
   padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .image-gallery-container {
+  position: relative;
   cursor: pointer;
   width: 32%;
   padding: 0;
 }
 
 .image-gallery-container > img {
+  position: relative;
   display: block;
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  /* max-width: 100%; */
 }
 
 /* .image-gallery > li {
