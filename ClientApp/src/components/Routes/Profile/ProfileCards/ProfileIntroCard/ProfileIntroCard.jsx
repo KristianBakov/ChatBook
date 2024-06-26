@@ -4,6 +4,7 @@ import { CardTitle } from "reactstrap";
 import ProfileCard from "../ProfileCard";
 import PhotoCollage from "../../../../PhotoLayouts/PhotoCollage/PhotoCollage";
 import "./ProfileIntroCard.css";
+import PhotoGrid from "../../../../PhotoLayouts/PhotoGrid/PhotoGrid";
 
 const photos = [
   { source: "https://loremflickr.com/640/480?lock=11" },
@@ -43,7 +44,7 @@ const ProfileIntroCard = ({ user }) => {
 
         {photos && photos.length > 0 && (
           <div className="post-collage-container">
-            <PhotoCollage postOwner="test" photos={photos} />
+            <PhotoGrid photos={photos} />
           </div>
         )}
       </ProfileCard>
