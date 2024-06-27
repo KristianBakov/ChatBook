@@ -1,6 +1,7 @@
 .profile-card {
   background-color: var(--post-bg-color);
   color: var(--text-color);
+  margin-bottom: 0.7em;
 }
 
 .profile-card .card-body {
